@@ -1,4 +1,4 @@
-Guarany
+Guarany [GUA]
 =======
 
 Welcome to Guarany Cryptocurrency!
