@@ -1,6 +1,6 @@
-Guarany Cryptocurrency
+Guarany
 =======
 
-Welcome to Guarany Cryptocurrency [GUA]. Coming soon http://guarany.co</i>
+Welcome to Guarany [GUA]. Coming soon http://guarany.co</i>
 
 <i>Guarany team</i>
