@@ -1,4 +1,5 @@
 Guarany
 =======
 
-Guarany Cryptocurrency. Coming soon https://guarany.co
+Welcome to Guarany Cryptocurrency! =D
+Coming soon http://guarany.co
