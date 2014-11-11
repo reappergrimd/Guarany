@@ -1,0 +1,15 @@
+compilador@compilador:~/Genesis$ python genesis.py -a scrypt -z "Criando o bloco genesis da Guarany"
+04ffff001d010422437269616e646f206f20626c6f636f2067656e657369732064612047756172616e79
+algorithm: scrypt
+merkle hash: 8c53a0a610698d8059d7e81560919bde393473051d1028ae7afe5e573da8733a
+pszTimestamp: Criando o bloco genesis da Guarany
+pubkey: 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
+time: 1413981333
+bits: 0x1e0ffff0
+Searching for genesis hash..
+1483.0 hash/s, estimate: 0.2 hgenesis hash found!
+nonce: 1160699
+genesis hash: 70474cd744f1e51b956bad31b0331a1ed864c9019508a4b54ab535e52893559a
+
+
+TEST

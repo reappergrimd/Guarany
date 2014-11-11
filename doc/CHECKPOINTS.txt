@@ -1,0 +1,53 @@
+PREMINE, BLOCK 1: 
+{
+"hash" : "00000d846cd1f4dcd982dc75478754a0f9a78df4504ff4599fb5a39a9e0d1dde",
+"confirmations" : 13,
+"size" : 263,
+"height" : 1,
+"version" : 4,
+"merkleroot" : "c2c8a88cb92e257884bca27fdfb4ad6a0f61b2e58e2d94d30558613a9fcfebfb",
+"mint" : 10000.00000000,
+"time" : 1415347292,
+"nonce" : 21958,
+"bits" : "1e0fffff",
+"difficulty" : 0.00024414,
+"previousblockhash" : "f664e791e95a68558c02c3e62cfc02bf0169f3460ed026b0cade9cb7d46dedba",
+"nextblockhash" : "00000cfd717650f044c577eea3c8ae5febdd710f311e1c049cfab4c94d50926e",
+"flags" : "proof-of-work",
+"proofhash" : "00000d846cd1f4dcd982dc75478754a0f9a78df4504ff4599fb5a39a9e0d1dde",
+"entropybit" : 0,
+"modifier" : "0000000000000000",
+"modifierchecksum" : "2dcbe358",
+"tx" : [
+"c2c8a88cb92e257884bca27fdfb4ad6a0f61b2e58e2d94d30558613a9fcfebfb"
+],
+"signature" : "3046022100eaee30e12331c5fc15ce28ef0eac2727a650c6c049919a6a6f23dad214f3601f022100837059b7a864b9d36bcf879bc5b4ec8f2e869d9ec5c1f82413f1a5f05b3e86f3"
+}
+
+
+BLOCK 13:
+
+
+{
+"hash" : "000000261b9e3215dcd47659704041b7d250569708bb5a20227f9423c01be501",
+"confirmations" : 1,
+"size" : 262,
+"height" : 13,
+"version" : 4,
+"merkleroot" : "af8746605a65c623627fe452e54fad5186bf8a1f55c1c7daa07fc86c1c09126b",
+"mint" : 1.00000000,
+"time" : 1415388188,
+"nonce" : 30884,
+"bits" : "1d618566",
+"difficulty" : 0.01025404,
+"previousblockhash" : "0000004642a5dd909740ad21bbda261c97cb6294b7aeefebf6eaeae640edec68",
+"flags" : "proof-of-work stake-modifier",
+"proofhash" : "000000261b9e3215dcd47659704041b7d250569708bb5a20227f9423c01be501",
+"entropybit" : 1,
+"modifier" : "00000000000003a8",
+"modifierchecksum" : "85095b9f",
+"tx" : [
+"af8746605a65c623627fe452e54fad5186bf8a1f55c1c7daa07fc86c1c09126b"
+],
+"signature" : "3045022100f4e926074b716a119b23fc3e97611afb5035ee46f089d3a398c0c1492a7dba9e02203089c8fe91ea5d6b99387b12fecfbb587e555a2cdd0fe8b17d8bee4b71e630b8"
+}
