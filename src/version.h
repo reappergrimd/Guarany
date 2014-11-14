@@ -21,32 +21,40 @@ extern const std::string CLIENT_NAME;
 extern const std::string CLIENT_BUILD;
 extern const std::string CLIENT_DATE;
 
-//
+// PoSV
+// database format versioning for checkpoints
+static const int DATABASE_VERSION = 80000;
+
+// PoSV
+// nTime field added to CTransaction
+// vchBlockSig field added to CBlock
+static const int POW_CLIENT_VERSION = 1020100;
+static const int POW_PROTOCOL_VERSION = 70003;
+static const int POW_TX_VERSION = 1;
+static const int POW_BLOCK_VERSION = 2;
+
 // network protocol versioning
 //
+static const int PROTOCOL_VERSION = 80000;
 
-static const int PROTOCOL_VERSION = 60006;
+// intial proto version, to be increased after version/verack negotiation
+static const int INIT_PROTO_VERSION = 209;
 
-// earlier versions not supported as of Feb 2012, and are disconnected
-static const int MIN_PROTO_VERSION = 209;
+// disconnect from peers older than this proto version
+static const int MIN_PEER_PROTO_VERSION = 70003;
 
 // nTime field added to CAddress, starting with this version;
 // if possible, avoid requesting addresses nodes older than this
 static const int CADDR_TIME_VERSION = 31402;
 
 // only request blocks from nodes outside this range of versions
-static const int NOBLKS_VERSION_START = 60002;
-static const int NOBLKS_VERSION_END = 60004;
+static const int NOBLKS_VERSION_START = 32000;
+static const int NOBLKS_VERSION_END = 32400;
 
 // BIP 0031, pong message, is enabled for all versions AFTER this one
 static const int BIP0031_VERSION = 60000;
 
 // "mempool" command, enhanced "getdata" behavior starts with this version:
 static const int MEMPOOL_GD_VERSION = 60002;
-
-#define DISPLAY_VERSION_MAJOR       1
-#define DISPLAY_VERSION_MINOR       0
-#define DISPLAY_VERSION_REVISION    0
-#define DISPLAY_VERSION_BUILD       0
 
 #endif

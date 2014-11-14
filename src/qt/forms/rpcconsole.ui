@@ -16,9 +16,6 @@
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
     <widget class="QTabWidget" name="tabWidget">
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(247, 247, 247);</string>
-     </property>
      <property name="currentIndex">
       <number>0</number>
      </property>
@@ -327,9 +324,6 @@
          <property name="toolTip">
           <string>Open the Guarany debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(13, 80, 111);</string>
-         </property>
          <property name="text">
           <string>&amp;Open</string>
          </property>
@@ -355,9 +349,6 @@
         <widget class="QPushButton" name="showCLOptionsButton">
          <property name="toolTip">
           <string>Show the Guarany-Qt help message to get a list with possible Guarany command-line options.</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(13, 80, 111);</string>
          </property>
          <property name="text">
           <string>&amp;Show</string>
@@ -434,9 +425,6 @@
            </property>
            <property name="toolTip">
             <string>Clear console</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(13, 80, 111);</string>
            </property>
            <property name="text">
             <string/>

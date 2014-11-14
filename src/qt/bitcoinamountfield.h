@@ -1,5 +1,9 @@
-#ifndef BITCOINFIELD_H
-#define BITCOINFIELD_H
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef BITCOINAMOUNTFIELD_H
+#define BITCOINAMOUNTFIELD_H
 
 #include <QWidget>
 
@@ -13,7 +17,9 @@ QT_END_NAMESPACE
 class BitcoinAmountField: public QWidget
 {
     Q_OBJECT
+
     Q_PROPERTY(qint64 value READ value WRITE setValue NOTIFY textChanged USER true)
+
 public:
     explicit BitcoinAmountField(QWidget *parent = 0);
 
@@ -56,5 +62,4 @@ private slots:
 
 };
 
-
-#endif // BITCOINFIELD_H
+#endif // BITCOINAMOUNTFIELD_H

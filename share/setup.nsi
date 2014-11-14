@@ -5,12 +5,12 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.3.0
+!define VERSION 1.4.0.0
 !define COMPANY "Guarany project"
-!define URL http://
+!define URL http://www.guarany.co/
 
 # MUI Symbol Definitions
-!define MUI_ICON "../share/pixmaps/Guarany.ico"
+!define MUI_ICON "../share/pixmaps/bitcoin.ico"
 !define MUI_WELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
@@ -45,13 +45,13 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile Guarany-1.0-win32-setup.exe
+OutFile guarany-1.4.0.0-win32-setup.exe
 InstallDir $PROGRAMFILES\Guarany
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 1.0.0
+VIProductVersion 1.4.0.0
 VIAddVersionKey ProductName Guarany
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
@@ -67,7 +67,7 @@ Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
     File ../release/guarany-qt.exe
-    File /oname=license.txt ../COPYING
+    File /oname=COPYING.txt ../COPYING
     File /oname=readme.txt ../doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
     File ../src/guaranyd.exe
@@ -76,8 +76,8 @@ Section -Main SEC0000
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
-    # Remove old wxwidgets-based-Guarany executable and locales:
-    Delete /REBOOTOK $INSTDIR\Guarany.exe
+    # Remove old wxwidgets-based-bitcoin executable and locales:
+    Delete /REBOOTOK $INSTDIR\guarany.exe
     RMDir /r /REBOOTOK $INSTDIR\locale
 SectionEnd
 
@@ -87,7 +87,7 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Guarany.lnk" $INSTDIR\Guarany-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Guarany.lnk" $INSTDIR\guarany-qt.exe
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall Guarany.lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -98,12 +98,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-
-    # Guarany: URI handling disabled for 0.6.0
-        WriteRegStr HKCR "Guarany" "URL Protocol" ""
-        WriteRegStr HKCR "Guarany" "" "URL:Guarany"
-        WriteRegStr HKCR "Guarany\DefaultIcon" "" $INSTDIR\Guarany-qt.exe
-        WriteRegStr HKCR "Guarany\shell\open\command" "" '"$INSTDIR\Guarany-qt.exe" "$$1"'
+    WriteRegStr HKCR "guarany" "URL Protocol" ""
+    WriteRegStr HKCR "guarany" "" "URL:Guarany"
+    WriteRegStr HKCR "guarany\DefaultIcon" "" $INSTDIR\guarany-qt.exe
+    WriteRegStr HKCR "guarany\shell\open\command" "" '"$INSTDIR\guarany-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -121,8 +119,8 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\Guarany-qt.exe
-    Delete /REBOOTOK $INSTDIR\license.txt
+    Delete /REBOOTOK $INSTDIR\guarany-qt.exe
+    Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
     RMDir /r /REBOOTOK $INSTDIR\src
@@ -141,7 +139,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "Guarany"
+    DeleteRegKey HKCR "guarany"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

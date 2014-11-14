@@ -19,9 +19,6 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QTabWidget" name="tabWidget">
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(247, 247, 247);</string>
-     </property>
      <property name="currentIndex">
       <number>0</number>
      </property>
@@ -51,7 +48,7 @@
          <item>
           <widget class="QValidatedLineEdit" name="addressIn_SM">
            <property name="toolTip">
-            <string>The address to sign the message with (e.g. GUARANYxuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</string>
+            <string>The address to sign the message with (e.g. GUARANYHbBrknXfDmfEmqZXTKMR1yiwVtB)</string>
            </property>
            <property name="maxLength">
             <number>34</number>
@@ -62,9 +59,6 @@
           <widget class="QPushButton" name="addressBookButton_SM">
            <property name="toolTip">
             <string>Choose an address from the address book</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(13, 80, 111);</string>
            </property>
            <property name="text">
             <string/>
@@ -85,9 +79,6 @@
           <widget class="QPushButton" name="pasteButton_SM">
            <property name="toolTip">
             <string>Paste address from clipboard</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(13, 80, 111);</string>
            </property>
            <property name="text">
             <string/>
@@ -114,6 +105,16 @@
         </widget>
        </item>
        <item>
+        <widget class="QLabel" name="signatureLabel_SM">
+         <property name="text">
+          <string>Signature</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::PlainText</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2_SM">
          <property name="spacing">
           <number>0</number>
@@ -134,9 +135,6 @@
           <widget class="QPushButton" name="copySignatureButton_SM">
            <property name="toolTip">
             <string>Copy the current signature to the system clipboard</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(13, 80, 111);</string>
            </property>
            <property name="text">
             <string/>
@@ -159,11 +157,8 @@
            <property name="toolTip">
             <string>Sign the message to prove you own this Guarany address</string>
            </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(13, 80, 111);</string>
-           </property>
            <property name="text">
-            <string>&amp;Sign Message</string>
+            <string>Sign &amp;Message</string>
            </property>
            <property name="icon">
             <iconset resource="../bitcoin.qrc">
@@ -178,9 +173,6 @@
           <widget class="QPushButton" name="clearButton_SM">
            <property name="toolTip">
             <string>Reset all sign message fields</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(13, 80, 111);</string>
            </property>
            <property name="text">
             <string>Clear &amp;All</string>
@@ -269,7 +261,7 @@
          <item>
           <widget class="QValidatedLineEdit" name="addressIn_VM">
            <property name="toolTip">
-            <string>The address the message was signed with (e.g. GUARANYxuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</string>
+            <string>The address the message was signed with (e.g. GUARANYHbBrknXfDmfEmqZXTKMR1yiwVtB)</string>
            </property>
            <property name="maxLength">
             <number>34</number>
@@ -280,9 +272,6 @@
           <widget class="QPushButton" name="addressBookButton_VM">
            <property name="toolTip">
             <string>Choose an address from the address book</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(13, 80, 111);</string>
            </property>
            <property name="text">
             <string/>
@@ -314,11 +303,8 @@
            <property name="toolTip">
             <string>Verify the message to ensure it was signed with the specified Guarany address</string>
            </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(13, 80, 111);</string>
-           </property>
            <property name="text">
-            <string>&amp;Verify Message</string>
+            <string>Verify &amp;Message</string>
            </property>
            <property name="icon">
             <iconset resource="../bitcoin.qrc">
@@ -333,9 +319,6 @@
           <widget class="QPushButton" name="clearButton_VM">
            <property name="toolTip">
             <string>Reset all verify message fields</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(13, 80, 111);</string>
            </property>
            <property name="text">
             <string>Clear &amp;All</string>

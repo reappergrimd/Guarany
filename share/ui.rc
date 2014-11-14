@@ -1,4 +1,4 @@
-BottleCaps               ICON    "pixmaps/Guarany.ico"
+bitcoin               ICON    "pixmaps/bitcoin.ico"
 
 #include "wx/msw/wx.rc"
 

@@ -1,38 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="pt_BR">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt_BR" version="2.0">
 <defaultcodec>UTF-8</defaultcodec>
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About Guarany</source>
-        <translation>Sobre a Guarany</translation>
+        <translation>Sobre o Guarany</translation>
     </message>
     <message>
         <location line="+39"/>
         <source>&lt;b&gt;Guarany&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Guarany&lt;/b&gt; version</translation>
+        <translation>Versão do &lt;b&gt;Guarany&lt;/b&gt;</translation>
     </message>
     <message>
-        <location line="+41"/>
-        <source>Copyright © 2009-2012 The Guarany developers</source>
-        <translation>Copyright © 2014~ desenvolvedores Guarany</translation>
-    </message>
-    <message>
-        <location line="+13"/>
+        <location line="+57"/>
         <source>
 This is experimental software.
 
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
-Este é um programa experimental.
-
-Distribuido sob licença MIT/X11, veja o arquivo que o acompanha ou http://www.opensource.org/licenses/mit-license.php.
-
-Este produto inclui programas desenvolvidos pelo projeto OpenSSL com o OpenSSL Toolkit (http://www.openssl.org/) escrito por Eric Young (eay@cryptsoft.com) e o programa UPnP escrito por Thomas Bernard.</translation>
+        <translation>⏎
+Este é um software experimental.⏎
+⏎
+Distribuido sob a licença de software MIT/X11, veja o arquivo anexo COPYING ou http://www.opensource.org/licenses/mit-license.php.⏎
+⏎
+Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenSSL Toolkit (http://www.openssl.org/), software de criptografia escrito por Eric Young (eay@cryptsoft.com) e sofware UPnP escrito por Thomas Bernard.</translation>
+    </message>
+    <message>
+        <location filename="../aboutdialog.cpp" line="+14"/>
+        <source>Copyright</source>
+        <translation>Copyright</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The Guarany developers</source>
+        <translation>Desenvolvedores do Guarany</translation>
     </message>
 </context>
 <context>
@@ -40,35 +43,35 @@ Este produto inclui programas desenvolvidos pelo projeto OpenSSL com o OpenSSL T
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
         <source>Address Book</source>
-        <translation>Endereços</translation>
+        <translation>Catálogo de endereços</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+19"/>
         <source>Double-click to edit address or label</source>
-        <translation>Dê um duplo-clique para editar o endereço ou rótulo</translation>
+        <translation>Clique duas vezes para editar o endereço ou o etiqueta</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>Create a new address</source>
-        <translation>Criar novo endereço</translation>
+        <translation>Criar um novo endereço</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Copiar o endereço selecionadao para a área de transferência</translation>
+        <translation>Copie o endereço selecionado para a área de transferência do sistema</translation>
     </message>
     <message>
         <location line="-11"/>
         <source>&amp;New Address</source>
-        <translation>&amp;Novo Endereço</translation>
+        <translation>&amp;Novo endereço</translation>
     </message>
     <message>
-        <location line="-46"/>
+        <location filename="../addressbookpage.cpp" line="+63"/>
         <source>These are your Guarany addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Estes sãos seus endereços Guarany para receber pagamentos. Talvez você queira passar um diferente para cada correspondente que esteja te pagando.</translation>
+        <translation>Estes são os seus endereços Guarany para receber pagamentos. Você pode querer enviar um endereço diferente para cada remetente, para acompanhar quem está pagando.</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location filename="../forms/addressbookpage.ui" line="+14"/>
         <source>&amp;Copy Address</source>
         <translation>&amp;Copiar Endereço</translation>
     </message>
@@ -80,22 +83,32 @@ Este produto inclui programas desenvolvidos pelo projeto OpenSSL com o OpenSSL T
     <message>
         <location line="+11"/>
         <source>Sign a message to prove you own a Guarany address</source>
-        <translation>Assinar uma mensagem para provar que o endereço Guarany é seu</translation>
+        <translation>Assine uma mensagem para provar que você é dono de um endereço Guarany</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Sign &amp;Message</source>
-        <translation>Assinar &amp;Mensagem</translation>
+        <translation>&amp;Assinar Mensagem</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Delete the currently selected address from the list</source>
-        <translation>Deletar o endereço selecionado da lista</translation>
+        <translation>Excluir os endereços selecionados da lista</translation>
     </message>
     <message>
-        <location line="-14"/>
+        <location line="+27"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Exportar os dados na aba atual para um arquivo</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Export</source>
+        <translation>&amp;Exportar</translation>
+    </message>
+    <message>
+        <location line="-44"/>
         <source>Verify a message to ensure it was signed with a specified Guarany address</source>
-        <translation>Verificar mensagem para ter certeza que veio do endereço Guarany</translation>
+        <translation>Verificar mensagem para se assegurar que ela foi assinada pelo dono de um endereço Guarany específico.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -105,27 +118,37 @@ Este produto inclui programas desenvolvidos pelo projeto OpenSSL com o OpenSSL T
     <message>
         <location line="+14"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Deletar</translation>
+        <translation>&amp;Excluir</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="+65"/>
+        <location filename="../addressbookpage.cpp" line="-5"/>
+        <source>These are your Guarany addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estes são os seus endereços Guarany para receber pagamentos. Você pode querer enviar um endereço diferente para cada remetente, para acompanhar quem está pagando.</translation>
+    </message>
+    <message>
+        <location line="+13"/>
         <source>Copy &amp;Label</source>
         <translation>Copiar &amp;Etiqueta</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>&amp;Edit</source>
         <translation>&amp;Editar</translation>
     </message>
     <message>
-        <location line="+250"/>
+        <location line="+1"/>
+        <source>Send &amp;Coins</source>
+        <translation>Enviar bit&amp;coins</translation>
+    </message>
+    <message>
+        <location line="+260"/>
         <source>Export Address Book Data</source>
-        <translation>Exportar dados do Livro de Endereços</translation>
+        <translation>Exportar Catálogo de Endereços</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Comma separated file (*.csv)</source>
-        <translation>Arquivos separados por vírgula (*.csv)</translation>
+        <translation>Arquivo separado por vírgulas (*. csv)</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -135,25 +158,25 @@ Este produto inclui programas desenvolvidos pelo projeto OpenSSL com o OpenSSL T
     <message>
         <location line="+0"/>
         <source>Could not write to file %1.</source>
-        <translation>Não pode escrever no arquivo %1.</translation>
+        <translation>Não foi possível gravar no arquivo %1.</translation>
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
-        <location filename="../addresstablemodel.cpp" line="+142"/>
+        <location filename="../addresstablemodel.cpp" line="+144"/>
         <source>Label</source>
-        <translation>Etiqueta</translation>
+        <translation>Rótulo</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Address</source>
-        <translation>Endereços</translation>
+        <translation>Endereço</translation>
     </message>
     <message>
         <location line="+36"/>
         <source>(no label)</source>
-        <translation>(sem etiqueta)</translation>
+        <translation>(Sem rótulo)</translation>
     </message>
 </context>
 <context>
@@ -161,27 +184,27 @@ Este produto inclui programas desenvolvidos pelo projeto OpenSSL com o OpenSSL T
     <message>
         <location filename="../forms/askpassphrasedialog.ui" line="+26"/>
         <source>Passphrase Dialog</source>
-        <translation>Palavra Secreta</translation>
+        <translation>Janela da Frase de Segurança</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Enter passphrase</source>
-        <translation>Coloque a palavra secreta</translation>
+        <translation>Digite a frase de segurança</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>New passphrase</source>
-        <translation>Nova palavra secreta</translation>
+        <translation>Nova frase de segurança</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Repeat new passphrase</source>
-        <translation>Repita a palavra secreta</translation>
+        <translation>Repita a nova frase de segurança</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="+33"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Coloque a nova palavra secreta para a carteira.&lt;br/&gt;Por favor use uma frase de &lt;b&gt;10 ou mais letras&lt;/b&gt;, ou &lt;b&gt;outo ou mais palavras&lt;/b&gt;.</translation>
+        <translation>Digite a nova frase de seguraça da sua carteira. &lt;br/&gt; Por favor, use uma frase de &lt;b&gt;10 ou mais caracteres aleatórios,&lt;/b&gt; ou &lt;b&gt;oito ou mais palavras.&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -191,7 +214,7 @@ Este produto inclui programas desenvolvidos pelo projeto OpenSSL com o OpenSSL T
     <message>
         <location line="+3"/>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Esta operação precisa de sua palavra secreta para desbloquear a carteira.</translation>
+        <translation>Esta operação precisa de sua frase de segurança para desbloquear a carteira.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -201,59 +224,59 @@ Este produto inclui programas desenvolvidos pelo projeto OpenSSL com o OpenSSL T
     <message>
         <location line="+3"/>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Esta operação precisa de sua palavra secreta para desemcriptar a carteira.</translation>
+        <translation>Esta operação precisa de sua frase de segurança para descriptografar a carteira.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Decrypt wallet</source>
-        <translation>Desemcritar carteira</translation>
+        <translation>Descriptografar carteira</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Change passphrase</source>
-        <translation>Mudar palavra secreta</translation>
+        <translation>Alterar frase de segurança</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Coloque a antiga palavra secreta da carteira.</translation>
+        <translation>Digite a frase de segurança antiga e nova para a carteira.</translation>
     </message>
     <message>
         <location line="+46"/>
         <source>Confirm wallet encryption</source>
-        <translation>Confirmar encriptação da carteira</translation>
+        <translation>Confirmar criptografia da carteira</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
-        <translation>AVISO: Se você encriptar sua carteira e perder sua palavra secreta, você irá &lt;b&gt;PERDER TODAS AS SUAS GUARANYS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GUARANYS&lt;/b&gt;!</source>
+        <translation>Aviso: Se você criptografar sua carteira e perder sua senha, você vai &lt;b&gt;perder todos os seus GUARANYS!&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Você tem certeza que deseja encriptar sua carteira?</translation>
+        <translation>Tem certeza de que deseja criptografar sua carteira?</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>IMPORTANTE: Qualquer backup que você tenha feito anteriormente serão substituidos ao encriptar sua carteira. Por razões de seguranças, faça backup antes de desemcriptar sua carteira.</translation>
+        <translation>IMPORTANTE: Qualquer backup prévio que você tenha feito do seu arquivo wallet deve ser substituído pelo novo e encriptado arquivo wallet gerado. Por razões de segurança, qualquer backup do arquivo wallet não criptografado se tornará inútil assim que você começar  a usar uma nova carteira criptografada.</translation>
     </message>
     <message>
         <location line="+100"/>
         <location line="+24"/>
         <source>Warning: The Caps Lock key is on!</source>
-        <translation>AVISO: A tecla CAPS LOCK está ativada!</translation>
+        <translation>Cuidado: A tecla Caps Lock está ligada!</translation>
     </message>
     <message>
         <location line="-130"/>
         <location line="+58"/>
         <source>Wallet encrypted</source>
-        <translation>Carteira encriptada</translation>
+        <translation>Carteira criptografada</translation>
     </message>
     <message>
         <location line="-56"/>
-        <source>Guarany will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Guarany irá fechar para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não irá proteger totalmente suas guaranys de serem roubadas por programas que possam infectar seu computador.</translation>
+        <source>Guarany will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your guaranys from being stolen by malware infecting your computer.</source>
+        <translation>O Guarany irá fechar agora para finalizar o processo de encriptação. Lembre-se de que encriptar sua carteira não protege totalmente suas guaranys de serem roubadas por malwares que tenham infectado o seu computador.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -261,58 +284,58 @@ Este produto inclui programas desenvolvidos pelo projeto OpenSSL com o OpenSSL T
         <location line="+42"/>
         <location line="+6"/>
         <source>Wallet encryption failed</source>
-        <translation>Falha ao encriptar carteira</translation>
+        <translation>A criptografia da carteira falhou</translation>
     </message>
     <message>
         <location line="-54"/>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Falha ao encriptar a carteira devido a um erro interno. Sua carteira não foi encriptada.</translation>
+        <translation>A criptografia da carteira falhou devido a um erro interno. Sua carteira não estava criptografada.</translation>
     </message>
     <message>
         <location line="+7"/>
         <location line="+48"/>
         <source>The supplied passphrases do not match.</source>
-        <translation>A palavra secreta inserida não corresponde.</translation>
+        <translation>A frase de segurança fornecida não confere.</translation>
     </message>
     <message>
         <location line="-37"/>
         <source>Wallet unlock failed</source>
-        <translation>Desbloqueio da carteira falhou</translation>
+        <translation>A abertura da carteira falhou</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+11"/>
         <location line="+19"/>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>A palavra secreta que você colocou na carteira é incorreta.</translation>
+        <translation>A frase de segurança digitada para a descriptografia da carteira estava incorreta.</translation>
     </message>
     <message>
         <location line="-20"/>
         <source>Wallet decryption failed</source>
-        <translation>Falha ao desencriptar a carteira</translation>
+        <translation>A descriptografia da carteira falhou</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>Palavra secreta da carteira foi modificada com sucesso.</translation>
+        <translation>A frase de segurança da carteira foi alterada com êxito.</translation>
     </message>
 </context>
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+257"/>
+        <location filename="../bitcoingui.cpp" line="+233"/>
         <source>Sign &amp;message...</source>
-        <translation>Assinar &amp;mensagem...</translation>
+        <translation>&amp;Assinar Mensagem...</translation>
     </message>
     <message>
-        <location line="+237"/>
+        <location line="+280"/>
         <source>Synchronizing with network...</source>
         <translation>Sincronizando com a rede...</translation>
     </message>
     <message>
-        <location line="-299"/>
+        <location line="-349"/>
         <source>&amp;Overview</source>
-        <translation>&amp;Visão Geral</translation>
+        <translation>&amp;Visão geral</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -320,54 +343,39 @@ Este produto inclui programas desenvolvidos pelo projeto OpenSSL com o OpenSSL T
         <translation>Mostrar visão geral da carteira</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+20"/>
         <source>&amp;Transactions</source>
         <translation>&amp;Transações</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Browse transaction history</source>
-        <translation>Mostrar histórico de transações</translation>
+        <translation>Navegar pelo histórico de transações</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Address Book</source>
-        <translation>&amp;Endereços</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+7"/>
         <source>Edit the list of stored addresses and labels</source>
-        <translation>Editar lista de endereços e etiquetas salvas</translation>
+        <translation>Editar a lista de endereços e rótulos</translation>
     </message>
     <message>
-        <location line="-13"/>
-        <source>&amp;Receive coins</source>
-        <translation>&amp;Receber</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="-14"/>
         <source>Show the list of addresses for receiving payments</source>
         <translation>Mostrar a lista de endereços para receber pagamentos</translation>
     </message>
     <message>
-        <location line="-7"/>
-        <source>&amp;Send coins</source>
-        <translation>&amp;Enviar</translation>
-    </message>
-    <message>
-        <location line="+35"/>
+        <location line="+31"/>
         <source>E&amp;xit</source>
         <translation>S&amp;air</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Quit application</source>
-        <translation>Fechar aplicativo</translation>
+        <translation>Sair da aplicação</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Show information about Guarany</source>
-        <translation>Mostrar informações sobre a Guarany</translation>
+        <translation>Mostrar informação sobre Guarany</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -377,7 +385,7 @@ Este produto inclui programas desenvolvidos pelo projeto OpenSSL com o OpenSSL T
     <message>
         <location line="+1"/>
         <source>Show information about Qt</source>
-        <translation>Mostrar informações sobre Qt</translation>
+        <translation>Mostrar informações sobre o Qt</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -385,110 +393,128 @@ Este produto inclui programas desenvolvidos pelo projeto OpenSSL com o OpenSSL T
         <translation>&amp;Opções...</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+6"/>
         <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Encriptar Carteira...</translation>
+        <translation>&amp;Criptografar Carteira...</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Backup da carteira...</translation>
+        <translation>&amp;Backup Carteira...</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Mudar palavra secreta...</translation>
-    </message>
-    <message numerus="yes">
-        <location line="+241"/>
-        <source>~%n block(s) remaining</source>
-        <translation>
-            <numerusform>~%n blocos faltando</numerusform>
-            <numerusform>~%n blocos faltando</numerusform>
-        </translation>
+        <translation>&amp;Mudar frase de segurança...</translation>
     </message>
     <message>
-        <location line="+6"/>
-        <source>Downloaded %1 of %2 blocks of transaction history (%3% done).</source>
-        <translation>Baixados %1 de %2 blocos do histórico de transações (%3% pronto).</translation>
-    </message>
-    <message>
-        <location line="-242"/>
-        <source>&amp;Export...</source>
-        <translation>&amp;Exportar...</translation>
-    </message>
-    <message>
-        <location line="-58"/>
-        <source>Send coins to a Guarany address</source>
-        <translation>Enviar moedas para um endereço Guarany</translation>
-    </message>
-    <message>
-        <location line="+45"/>
-        <source>Modify configuration options for Guarany</source>
-        <translation>Modificar configurações da Guarany</translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <source>Export the data in the current tab to a file</source>
-        <translation>Exportar dados da aba atual para um arquivo</translation>
-    </message>
-    <message>
-        <location line="-10"/>
-        <source>Encrypt or decrypt wallet</source>
-        <translation>Encriptar ou desencriptar a carteira</translation>
+        <location line="+285"/>
+        <source>Importing blocks from disk...</source>
+        <translation>Importando blocos do disco...</translation>
     </message>
     <message>
         <location line="+3"/>
+        <source>Reindexing blocks on disk...</source>
+        <translation>Reindexando blocos no disco...</translation>
+    </message>
+    <message>
+        <location line="-347"/>
+        <source>Send coins to a Guarany address</source>
+        <translation>Enviar moedas para um endereço guarany</translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Modify configuration options for Guarany</source>
+        <translation>Modificar opções de configuração para guarany</translation>
+    </message>
+    <message>
+        <location line="+9"/>
         <source>Backup wallet to another location</source>
-        <translation>Backup da carteira para outro local</translation>
+        <translation>Fazer cópia de segurança da carteira para uma outra localização</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Mudar a palavra secreta usada para encriptar a carteira</translation>
+        <translation>Mudar a frase de segurança utilizada na criptografia da carteira</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>&amp;Debug window</source>
-        <translation>&amp;Janela de Debug</translation>
+        <translation>Janela de &amp;Depuração</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Open debugging and diagnostic console</source>
-        <translation>Abrir o console de debug e diagnóstico</translation>
+        <translation>Abrir console de depuração e diagnóstico</translation>
     </message>
     <message>
-        <location line="-5"/>
+        <location line="-4"/>
         <source>&amp;Verify message...</source>
         <translation>&amp;Verificar mensagem...</translation>
     </message>
     <message>
-        <location line="-186"/>
+        <location line="-165"/>
+        <location line="+530"/>
         <source>Guarany</source>
         <translation>Guarany</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="-530"/>
         <source>Wallet</source>
         <translation>Carteira</translation>
     </message>
     <message>
-        <location line="+168"/>
+        <location line="+101"/>
+        <source>&amp;Send</source>
+        <translation>&amp;Enviar</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Receive</source>
+        <translation>&amp;Receber</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>&amp;Addresses</source>
+        <translation>&amp;Endereços</translation>
+    </message>
+    <message>
+        <location line="+22"/>
         <source>&amp;About Guarany</source>
-        <translation>&amp;Sobre a Guarany</translation>
+        <translation>&amp;Sobre o Guarany</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>&amp;Show / Hide</source>
-        <translation>&amp;Mostrar / Esconder</translation>
+        <translation>&amp;Exibir/Ocultar</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+1"/>
+        <source>Show or hide the main Window</source>
+        <translation>Mostrar ou esconder a Janela Principal.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation>Criptografar as chaves privadas que pertencem à sua carteira</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Sign messages with your Guarany addresses to prove you own them</source>
+        <translation>Assine mensagems com seus endereços Guarany para provar que você é dono deles</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Verify messages to ensure they were signed with specified Guarany addresses</source>
+        <translation>Verificar mensagens para se assegurar que elas foram assinadas pelo dono de Endereços Guarany específicos</translation>
+    </message>
+    <message>
+        <location line="+28"/>
         <source>&amp;File</source>
         <translation>&amp;Arquivo</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+7"/>
         <source>&amp;Settings</source>
         <translation>&amp;Configurações</translation>
     </message>
@@ -500,104 +526,113 @@ Este produto inclui programas desenvolvidos pelo projeto OpenSSL com o OpenSSL T
     <message>
         <location line="+9"/>
         <source>Tabs toolbar</source>
-        <translation>Tabs toolbar</translation>
+        <translation>Barra de ferramentas</translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>Actions toolbar</source>
-        <translation>Barra de Ações</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <location line="+9"/>
+        <location line="+17"/>
+        <location line="+10"/>
         <source>[testnet]</source>
         <translation>[testnet]</translation>
     </message>
     <message>
-        <location line="+0"/>
-        <location line="+60"/>
+        <location line="+47"/>
         <source>Guarany client</source>
         <translation>Cliente Guarany</translation>
     </message>
     <message numerus="yes">
-        <location line="+69"/>
+        <location line="+141"/>
         <source>%n active connection(s) to Guarany network</source>
-        <translation>
-            <numerusform>%n conexão ativa com a rede Guarany</numerusform>
-            <numerusform>%n conexões ativas com a rede Guarany</numerusform>
-        </translation>
+        <translation><numerusform>%n conexão ativa na rede Guarany</numerusform><numerusform>%n conexões ativas na rede Guarany</numerusform></translation>
     </message>
     <message>
-        <location line="+40"/>
-        <source>Downloaded %1 blocks of transaction history.</source>
-        <translation>%1 blocos baixados do histórico de transações.</translation>
-    </message>
-    <message numerus="yes">
         <location line="+22"/>
-        <source>%n second(s) ago</source>
-        <translation>
-            <numerusform>%n segundo atrás</numerusform>
-            <numerusform>%n segundos atrás</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location line="+4"/>
-        <source>%n minute(s) ago</source>
-        <translation>
-            <numerusform>%n minuto atrás</numerusform>
-            <numerusform>%n minutos atrás</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location line="+4"/>
-        <source>%n hour(s) ago</source>
-        <translation>
-            <numerusform>%n hora atrás</numerusform>
-            <numerusform>%n horas atrás</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location line="+4"/>
-        <source>%n day(s) ago</source>
-        <translation>
-            <numerusform>%n dia atrás</numerusform>
-            <numerusform>%n dias atrás</numerusform>
-        </translation>
+        <source>No block source available...</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+12"/>
+        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
+        <translation>Processado %1 de %2 blocos (estimado) de histórico de transações.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Processed %1 blocks of transaction history.</source>
+        <translation>Processado %1 blocos do histórico de transações.</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+20"/>
+        <source>%n hour(s)</source>
+        <translation><numerusform>%n hora</numerusform><numerusform>%n horas</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n day(s)</source>
+        <translation><numerusform>%n dia</numerusform><numerusform>%n dias</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n week(s)</source>
+        <translation><numerusform>%n semana</numerusform><numerusform>%n semanas</numerusform></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>%1 behind</source>
+        <translation>%1 atrás</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Last received block was generated %1 ago.</source>
+        <translation>Último bloco recebido foi gerado %1 atrás.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Transactions after this will not yet be visible.</source>
+        <translation>Transações após isso ainda não estão visíveis.</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Error</source>
+        <translation>Erro</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning</source>
+        <translation>Cuidado</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Information</source>
+        <translation>Informação</translation>
+    </message>
+    <message>
+        <location line="+70"/>
+        <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
+        <translation>A transação está acima do tamanho limite. Você ainda enviar ela com uma taxa de %1, que vai para os nós processam sua transação e ajuda a manter a rede. Você quer pagar a taxa?</translation>
+    </message>
+    <message>
+        <location line="-140"/>
         <source>Up to date</source>
         <translation>Atualizado</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+31"/>
         <source>Catching up...</source>
-        <translation>Recuperando atraso...</translation>
+        <translation>Recuperando o atraso ...</translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Last received block was generated %1.</source>
-        <translation>Último bloco recebido foi gerado %1.</translation>
-    </message>
-    <message>
-        <location line="+59"/>
-        <source>This transaction is over the size limit.  You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network.  Do you want to pay the fee?</source>
-        <translation>Esta transação está acima do tamanho permitido. Você pode enviar por uma taxa de %1, que irá para os nodes processarem sua transação and ajudará no suporte da rede. Você deseja pagar esta taxa?</translation>
-    </message>
-    <message>
-        <location line="+5"/>
+        <location line="+113"/>
         <source>Confirm transaction fee</source>
-        <translation>Confirmar pagamento de taxa</translation>
+        <translation>Confirmar taxa de transação</translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+8"/>
         <source>Sent transaction</source>
-        <translation>Enviar transação</translation>
+        <translation>Transação enviada</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+0"/>
         <source>Incoming transaction</source>
-        <translation>Transação chegando</translation>
+        <translation>Transação recebida</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -608,64 +643,43 @@ Address: %4
 </source>
         <translation>Data: %1
 Quantidade: %2
-Tipe: %3
-Endereço: %4
-</translation>
+Tipo: %3
+Endereço: %4</translation>
     </message>
     <message>
-        <location line="+100"/>
-        <location line="+15"/>
+        <location line="+33"/>
+        <location line="+23"/>
         <source>URI handling</source>
-        <translation>Análise de URI</translation>
+        <translation>Manipulação de URI</translation>
     </message>
     <message>
-        <location line="-15"/>
-        <location line="+15"/>
+        <location line="-23"/>
+        <location line="+23"/>
         <source>URI can not be parsed! This can be caused by an invalid Guarany address or malformed URI parameters.</source>
-        <translation>URI não pode ser analisada! Isto pode ter sido causado por um endereço Guarany inválido, uma URI mal formada ou com parametros errados.</translation>
+        <translation>URI não pode ser decodificado! Isso pode ter sido causado por um endereço Guarany inválido ou por parâmetros URI malformados.</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+17"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Carteira é &lt;b&gt;encriptada&lt;/b&gt; e atualmente está &lt;b&gt;desbloqueada&lt;/b&gt;</translation>
+        <translation>Carteira está &lt;b&gt;criptografada&lt;/b&gt; e atualmente &lt;b&gt;desbloqueada&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Carteira é &lt;b&gt;encriptada&lt;/b&gt; e atualmente está &lt;b&gt;bloqueada&lt;/b&gt;</translation>
+        <translation>Carteira está &lt;b&gt;criptografada&lt;/b&gt; e atualmente &lt;b&gt;bloqueada&lt;/b&gt;</translation>
     </message>
     <message>
-        <location line="+23"/>
-        <source>Backup Wallet</source>
-        <translation>Backup da carteira</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Dados da carteira (*.dat)</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Backup Failed</source>
-        <translation>Backup falhou</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>There was an error trying to save the wallet data to the new location.</source>
-        <translation>Ocorreu um erro ao tentar salvar os dados da carteira em um novo local.</translation>
-    </message>
-    <message>
-        <location filename="../bitcoin.cpp" line="+109"/>
+        <location filename="../bitcoin.cpp" line="+111"/>
         <source>A fatal error occurred. Guarany can no longer continue safely and will quit.</source>
-        <translation>Ocorreu um erro fatal. Guarany não pode continuar com segurança e será fechada.</translation>
+        <translation>Um erro fatal ocorreu. Guarany não pode continuar em segurança e irá fechar.</translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+87"/>
+        <location filename="../clientmodel.cpp" line="+104"/>
         <source>Network Alert</source>
-        <translation>Alerta de rede</translation>
+        <translation>Alerta da Rede</translation>
     </message>
 </context>
 <context>
@@ -683,63 +697,63 @@ Endereço: %4
     <message>
         <location line="+10"/>
         <source>The label associated with this address book entry</source>
-        <translation>Etiquetas associadas a este livro de endereços</translation>
+        <translation>A etiqueta associada a esse endereço do catálogo</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Address</source>
-        <translation>&amp;Endereços</translation>
+        <translation>&amp;Endereço</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
-        <translation>Endereços associados com este livro de endereços. Isto pode ser modificado apenas para endereços de envio.</translation>
+        <translation>O endereço associado à essa entrada do seu catálogo de endereços. Isso só pode ser modificado para endereço de envio.</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="+20"/>
+        <location filename="../editaddressdialog.cpp" line="+21"/>
         <source>New receiving address</source>
-        <translation>Novos endereços de recebimento</translation>
+        <translation>Novo endereço de recebimento</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>New sending address</source>
-        <translation>Novos endereços de envio</translation>
+        <translation>Novo endereço de envio</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Edit receiving address</source>
-        <translation>Editar endereços de recebimento</translation>
+        <translation>Editar endereço de recebimento</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Edit sending address</source>
-        <translation>Editar endereços de envio</translation>
+        <translation>Editar endereço de envio</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+76"/>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>O endereço fornecido &quot;%1&quot; já está no livro de endereços.</translation>
+        <translation>O endereço digitado &quot;%1&quot; já se encontra no catálogo de endereços.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Guarany address.</source>
-        <translation>O endereço fornecido &quot;%1&quot; não é um endereço Guarany válido.</translation>
+        <translation>O endereço digitado &quot;%1&quot; não é um endereço Guarany válido.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+10"/>
         <source>Could not unlock wallet.</source>
-        <translation>Não pode desbloquear a carteira.</translation>
+        <translation>Não foi possível destravar a carteira.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>New key generation failed.</source>
-        <translation>Geração de nova chave falhou.</translation>
+        <translation>A geração de nova chave falhou.</translation>
     </message>
 </context>
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+419"/>
+        <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
         <source>Guarany-Qt</source>
         <translation>Guarany-Qt</translation>
@@ -762,22 +776,22 @@ Endereço: %4
     <message>
         <location line="+4"/>
         <source>UI options</source>
-        <translation>Opções do Visual</translation>
+        <translation>opções da UI</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Definir linguagem, por exemplo, &quot;pt_BR&quot; (padrão: tradução do sistema)</translation>
+        <translation>Escolher língua, por exemplo &quot;de_DE&quot; (padrão: localização do sistema)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Start minimized</source>
-        <translation>Iniciar minimizado</translation>
+        <translation>Inicializar minimizado</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show splash screen on startup (default: 1)</source>
-        <translation>Mostrar splash screen ao iniciar (padrão: 1)</translation>
+        <translation>Mostrar tela inicial ao ligar (padrão: 1)</translation>
     </message>
 </context>
 <context>
@@ -790,72 +804,72 @@ Endereço: %4
     <message>
         <location line="+16"/>
         <source>&amp;Main</source>
-        <translation>&amp;Principal</translation>
+        <translation>Principal</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
-        <translation>A taxa de transação opcional por KB irá ajudar a ter certeza que sua transação ocorrerá rapidamente. A maioria das transções são de 1kB, a taxa recomendada é 0.01.</translation>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+15"/>
         <source>Pay transaction &amp;fee</source>
-        <translation>Pagar &amp;taxa de transação</translation>
+        <translation>Pagar taxa de &amp;transação</translation>
     </message>
     <message>
         <location line="+31"/>
         <source>Automatically start Guarany after logging in to the system.</source>
-        <translation>Iniciar Guarany automaticamente após a inicialização do sistema.</translation>
+        <translation>Iniciar Guarany automaticamente após se logar no sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Start Guarany on system login</source>
-        <translation>&amp;Iniciar a Guarany ao fazer login no sistema</translation>
+        <translation>Iniciar Guarany no login do sistema</translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
-        <translation>Desfragmentar blocos e endereços da base de dados ao desligar. Poderá ser movido para outra pasta de dados, mas poderá ser um desligamento lento. A carteira será sempre desfragmentada.</translation>
+        <location line="+35"/>
+        <source>Reset all client options to default.</source>
+        <translation>Redefinir todas as opções do cliente para opções padrão.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Detach databases at shutdown</source>
-        <translation>&amp;Desgramentar base de dados ao desligar</translation>
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Redefinir opções</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+13"/>
         <source>&amp;Network</source>
-        <translation>&amp;Rede</translation>
+        <translation>Rede</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Automatically open the Guarany client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir as portas da Guarany automaticamente no roteador. Isto funciona somente com roteadores que suportam UPnP e esta função esteja habilitada.</translation>
+        <translation>Abrir as portas do cliente Guarany automaticamente no roteador. Isto só funcionará se seu roteador suportar UPnP e esta função estiver habilitada.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Map port using &amp;UPnP</source>
-        <translation>Mapear portas usando &amp;UPnP</translation>
+        <translation>Mapear porta usando &amp;UPnP</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Connect to the Guarany network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Conectar ao rede Guarany utilizando um proxy (e.x: conectar usando a rede Tor).</translation>
+        <translation>Conectar à rede Guarany através de um proxy SOCKS (ex. quando estiver usando através do Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Connect through SOCKS proxy:</source>
-        <translation>&amp;Conectar usando PROXY:</translation>
+        <translation>&amp;Conectar através de um proxy SOCKS:</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP PROXY:</translation>
+        <translation>&amp;IP do proxy:</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>IP address of the proxy (e.g. 127.0.0.1)</source>
-        <translation>Endereço IP do proxy (e.x: 127.0.0.1)</translation>
+        <translation>Endereço &amp;IP do proxy (ex. 127.0.0.1)</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -865,7 +879,7 @@ Endereço: %4
     <message>
         <location line="+19"/>
         <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Porta do proxy (e.x: 9050)</translation>
+        <translation>Porta do serviço de proxy (ex. 9050)</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -875,7 +889,7 @@ Endereço: %4
     <message>
         <location line="+13"/>
         <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>Versão do proxy SOCKS (e.x: 5)</translation>
+        <translation>Versão do proxy SOCKS (ex. 5)</translation>
     </message>
     <message>
         <location line="+36"/>
@@ -885,57 +899,57 @@ Endereço: %4
     <message>
         <location line="+6"/>
         <source>Show only a tray icon after minimizing the window.</source>
-        <translation>Mostrar apenas o ícone na bandeja ao minimizar.</translation>
+        <translation>Mostrar apenas um ícone na bandeja ao minimizar a janela.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Minimizar para a bandeja da barra de tarefas</translation>
+        <translation>&amp;Minimizar para a bandeja em vez da barra de tarefas.</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minimizar ao invés de fechar a aplicação ao fechar a janela. Quando esta opção está ativada, a aplicação será fechada apenas se clicar em SAIR no menu.</translation>
+        <translation>Minimizar em vez de sair do aplicativo quando a janela for fechada. Quando esta opção é escolhida, o aplicativo só será fechado selecionando Sair no menu Arquivo.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>M&amp;inimize on close</source>
-        <translation>M&amp;inimizar ao fechar</translation>
+        <translation>M&amp;inimizar ao sair</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>&amp;Display</source>
-        <translation>&amp;Exibir</translation>
+        <translation>&amp;Mostrar</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Linguagem da interface de usuário:</translation>
+        <translation>&amp;Língua da interface com usuário:</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting Guarany.</source>
-        <translation>A linguagem da interface de usuário pode ser configurada aqui. Esta configuração terá efeito após reinicializar a Guarany.</translation>
+        <translation>A língua da interface com usuário pode ser escolhida aqui. Esta configuração só surtirá efeito após reiniciar o Guarany.</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Mostrar unidades em:</translation>
+        <translation>&amp;Unidade usada para mostrar quantidades:</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Escolher a subdivisão padrão para mostrar ao enviar moedas.</translation>
+        <translation>Escolha a unidade padrão de subdivisão para interface mostrar quando enviar guaranys.</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Whether to show Guarany addresses in the transaction list or not.</source>
-        <translation>Se deve mostrar ou não endereços Guarany na lista de transações.</translation>
+        <translation>Mostrar ou não endereços Guarany na lista de transações.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Exibir endereços na lista de transações</translation>
+        <translation>Mostrar en&amp;dereços na lista de transações</translation>
     </message>
     <message>
         <location line="+71"/>
@@ -953,21 +967,36 @@ Endereço: %4
         <translation>&amp;Aplicar</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+55"/>
+        <location filename="../optionsdialog.cpp" line="+53"/>
         <source>default</source>
         <translation>padrão</translation>
     </message>
     <message>
-        <location line="+147"/>
+        <location line="+130"/>
+        <source>Confirm options reset</source>
+        <translation>Confirmar redefinição de opções</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Some settings may require a client restart to take effect.</source>
+        <translation>Algumas configurações requerem reinicialização para surtirem efeito.</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Do you want to proceed?</source>
+        <translation>Você quer continuar?</translation>
+    </message>
+    <message>
+        <location line="+42"/>
         <location line="+9"/>
         <source>Warning</source>
-        <translation>Aviso</translation>
+        <translation>Cuidado</translation>
     </message>
     <message>
         <location line="-9"/>
         <location line="+9"/>
         <source>This setting will take effect after restarting Guarany.</source>
-        <translation>Esta opção irá ter efeito após reiniciar a Guarany.</translation>
+        <translation>Esta configuração surtirá efeito após reinicializar o aplicativo Guarany</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -983,30 +1012,20 @@ Endereço: %4
         <translation>Formulário</translation>
     </message>
     <message>
-        <location line="+33"/>
-        <location line="+183"/>
+        <location line="+50"/>
+        <location line="+166"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Guarany network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. Sua carteira irá sincronizar automaticamente com a rede Guarany após estabelecer conexão, mas este processo ainda não foi completado ainda.</translation>
+        <translation>A informação mostrada pode estar desatualizada. Sua carteira sincroniza automaticamente com a rede Guarany depois que a conexão é estabelecida, mas este processo pode não estar completo ainda.</translation>
     </message>
     <message>
-        <location line="-141"/>
+        <location line="-124"/>
         <source>Balance:</source>
-        <translation>Balanço:</translation>
+        <translation>Saldo:</translation>
     </message>
     <message>
-        <location line="+118"/>
-        <source>Stake:</source>
-        <translation>Juros:</translation>
-    </message>
-    <message>
-        <location line="+58"/>
-        <source>Number of transactions:</source>
-        <translation>Número de transações:</translation>
-    </message>
-    <message>
-        <location line="-29"/>
+        <location line="+29"/>
         <source>Unconfirmed:</source>
-        <translation>Não confirmado:</translation>
+        <translation>Não confirmadas:</translation>
     </message>
     <message>
         <location line="-78"/>
@@ -1014,14 +1033,14 @@ Endereço: %4
         <translation>Carteira</translation>
     </message>
     <message>
-        <location line="+124"/>
+        <location line="+107"/>
         <source>Immature:</source>
         <translation>Imaturo:</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Mined balance that has not yet matured</source>
-        <translation>Balanço de moedas mineradas mas não maturadas</translation>
+        <translation>Saldo minerado que ainda não maturou</translation>
     </message>
     <message>
         <location line="+46"/>
@@ -1029,30 +1048,28 @@ Endereço: %4
         <translation>&lt;b&gt;Transações recentes&lt;/b&gt;</translation>
     </message>
     <message>
-        <location line="-118"/>
+        <location line="-101"/>
         <source>Your current balance</source>
         <translation>Seu saldo atual</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</source>
-        <translation>Total de transação que necessitam ser confirmadas, não são contabilizadas no seu saldo atual</translation>
+        <translation>Total de transações ainda não confirmadas, e que ainda não contam no saldo atual</translation>
     </message>
     <message>
-        <location line="+134"/>
-        <source>Total of coins that was staked, and do not yet count toward the current balance</source>
-        <translation>Total de moedas gerando juros, não são contabilizadas no seu balanço atual</translation>
-    </message>
-    <message>
-        <location line="+20"/>
-        <source>Total number of transactions in wallet</source>
-        <translation>Número total de transações na  carteira</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="+112"/>
+        <location filename="../overviewpage.cpp" line="+116"/>
         <location line="+1"/>
         <source>out of sync</source>
-        <translation>fora de sincronização</translation>
+        <translation>fora de sincronia</translation>
+    </message>
+</context>
+<context>
+    <name>PaymentServer</name>
+    <message>
+        <location filename="../paymentserver.cpp" line="+107"/>
+        <source>Cannot start guarany: click-to-pay handler</source>
+        <translation>Não foi possível iniciar guarany: manipulador clique-para-pagar</translation>
     </message>
 </context>
 <context>
@@ -1060,17 +1077,17 @@ Endereço: %4
     <message>
         <location filename="../forms/qrcodedialog.ui" line="+14"/>
         <source>QR Code Dialog</source>
-        <translation>Tela de QR Code</translation>
+        <translation>Janela do código QR</translation>
     </message>
     <message>
         <location line="+59"/>
         <source>Request Payment</source>
-        <translation>Requisitar pagamento</translation>
+        <translation>Requisitar Pagamento</translation>
     </message>
     <message>
         <location line="+56"/>
         <source>Amount:</source>
-        <translation>Quantidade:</translation>
+        <translation>Quantia:</translation>
     </message>
     <message>
         <location line="-44"/>
@@ -1090,22 +1107,22 @@ Endereço: %4
     <message>
         <location filename="../qrcodedialog.cpp" line="+62"/>
         <source>Error encoding URI into QR Code.</source>
-        <translation>Erro ao codificar URI em QR Code.</translation>
+        <translation>Erro ao codigicar o URI em código QR</translation>
     </message>
     <message>
         <location line="+40"/>
         <source>The entered amount is invalid, please check.</source>
-        <translation>A quantidade colocada é inválida, por favor verifique.</translation>
+        <translation>A quantidade digitada é inválida, favor verificar.</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>A URI resultante é muito longa, tente reduzir o texto da etiqueta / mensagem.</translation>
+        <translation>URI resultante muito longa. Tente reduzir o texto do rótulo ou da mensagem.</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Save QR Code</source>
-        <translation>Salvar QR Code</translation>
+        <translation>Salvar código QR</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1130,7 +1147,7 @@ Endereço: %4
         <location line="+53"/>
         <location line="+23"/>
         <location line="+23"/>
-        <location filename="../rpcconsole.cpp" line="+348"/>
+        <location filename="../rpcconsole.cpp" line="+339"/>
         <source>N/A</source>
         <translation>N/A</translation>
     </message>
@@ -1147,12 +1164,12 @@ Endereço: %4
     <message>
         <location line="+68"/>
         <source>Using OpenSSL version</source>
-        <translation>Versão da OpenSSL utilizada</translation>
+        <translation>Usando OpenSSL versão</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Startup time</source>
-        <translation>Tempo de inicialização</translation>
+        <translation>Horário de inicialização</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1167,27 +1184,27 @@ Endereço: %4
     <message>
         <location line="+23"/>
         <source>On testnet</source>
-        <translation>Na testnet</translation>
+        <translation>Na rede de teste</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Block chain</source>
-        <translation>Block chain</translation>
+        <translation>Corrente de blocos</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Current number of blocks</source>
-        <translation>Número atual de blocos</translation>
+        <translation>Quantidade atual de blocos</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Estimated total blocks</source>
-        <translation>Blocos totais estimados</translation>
+        <translation>Total estimado de blocos</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Last block time</source>
-        <translation>Hora do último bloco</translation>
+        <translation>Horário do último bloco</translation>
     </message>
     <message>
         <location line="+52"/>
@@ -1202,7 +1219,7 @@ Endereço: %4
     <message>
         <location line="+7"/>
         <source>Show the Guarany-Qt help message to get a list with possible Guarany command-line options.</source>
-        <translation>Mostra a mensagem de ajuda da Guarany com a lista de possieis comandos e opções da linha de comando.</translation>
+        <translation>Mostrar mensagem de ajuda do Guarany-Qt para obter uma lista com possíveis opções da linha de comando do Guarany.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1217,27 +1234,27 @@ Endereço: %4
     <message>
         <location line="-260"/>
         <source>Build date</source>
-        <translation>Data de Compilação</translation>
+        <translation>Data do &apos;build&apos;</translation>
     </message>
     <message>
         <location line="-104"/>
         <source>Guarany - Debug window</source>
-        <translation>Guarany - Tela de Debug</translation>
+        <translation>Guarany - Janela de Depuração</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Guarany Core</source>
-        <translation>Guarany Core</translation>
+        <translation>Núcleo Guarany</translation>
     </message>
     <message>
         <location line="+279"/>
         <source>Debug log file</source>
-        <translation>Arquivo de Debug</translation>
+        <translation>Arquivo de log de Depuração</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Open the Guarany debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Abrir o arquivo de log da Guarny a partir da atual pasta. Isto pode levar alguns segundos para arquivos grandes.</translation>
+        <translation>Abrir o arquivo de log de depuração do Guarany do diretório atual de dados. Isso pode levar alguns segundos para arquivos de log grandes.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1245,19 +1262,19 @@ Endereço: %4
         <translation>Limpar console</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="-33"/>
+        <location filename="../rpcconsole.cpp" line="-30"/>
         <source>Welcome to the Guarany RPC console.</source>
-        <translation>Olá, seja bem vindo(a) ao Console RPC da Guarany.</translation>
+        <translation>Bem-vindo ao console Guarany RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Utilize as setas para cima e para baixo para navegar no histórico, e &lt;b&gt;Ctrl-L&lt;/b&gt; para limpar a tela.</translation>
+        <translation>Use as setas para cima e para baixo para navegar pelo histórico, e &lt;b&gt;Ctrl-L&lt;/b&gt; para limpar a tela.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Digite &lt;b&gt;help&lt;/b&gt; para visualizar os comandos possíveis.</translation>
+        <translation>Digite &lt;b&gt;help&lt;/b&gt; para uma visão geral dos comandos disponíveis.</translation>
     </message>
 </context>
 <context>
@@ -1272,47 +1289,47 @@ Endereço: %4
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Enviar Guaranys</translation>
+        <translation>Enviar dinheiro</translation>
     </message>
     <message>
         <location line="+50"/>
         <source>Send to multiple recipients at once</source>
-        <translation>Enviar para multiplos destinatários ao mesmo tempo</translation>
+        <translation>Enviar para vários destinatários de uma só vez</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Add &amp;Recipient</source>
-        <translation>Adicionar &amp;Destinatários</translation>
+        <translation>Adicionar destinatário</translation>
     </message>
     <message>
         <location line="+20"/>
         <source>Remove all transaction fields</source>
-        <translation>Remover todos os campos de transações</translation>
+        <translation>Remover todos os campos da transação</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Clear &amp;All</source>
-        <translation>Limpar &amp;Tudo</translation>
+        <translation>Limpar Tudo</translation>
     </message>
     <message>
         <location line="+22"/>
         <source>Balance:</source>
-        <translation>Balanço:</translation>
+        <translation>Saldo:</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 GUA</source>
-        <translation>123.456 GUA</translation>
+        <source>123.456 BTC</source>
+        <translation>123.456 BTC</translation>
     </message>
     <message>
         <location line="+31"/>
         <source>Confirm the send action</source>
-        <translation>Confirmar a ação de enviar</translation>
+        <translation>Confirmar o envio</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>S&amp;end</source>
-        <translation>E&amp;viar</translation>
+        <translation>Enviar</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-59"/>
@@ -1322,7 +1339,7 @@ Endereço: %4
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Confirmar envio de Guaranys</translation>
+        <translation>Confirmar envio de dinheiro</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1332,42 +1349,42 @@ Endereço: %4
     <message>
         <location line="+0"/>
         <source> and </source>
-        <translation> e </translation>
+        <translation>e</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>The recipient address is not valid, please recheck.</source>
-        <translation>O endereço do destinatário não é válido, por favor verifique novamente.</translation>
+        <translation>O endereço do destinatário não é válido, favor verificar.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>The amount to pay must be larger than 0.</source>
-        <translation>A quantidade do pagamento deve ser maior que 0.</translation>
+        <translation>A quantidade a ser paga precisa ser maior que 0.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>The amount exceeds your balance.</source>
-        <translation>A quantidade excede o seu balanço total.</translation>
+        <translation>A quantidade excede seu saldo.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>O total excede o seu balanço enquanto a taxa de %1 está inclusa.</translation>
+        <translation>O total excede seu saldo quando uma taxa de transação de %1 é incluída.</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Endereço duplicado encontrado, pode enviar apenas uma vez para o mesmo endereço.</translation>
+        <translation>Endereço duplicado: pode-se enviar para cada endereço apenas uma vez por transação.</translation>
     </message>
     <message>
         <location line="+5"/>
-        <source>Error: Transaction creation failed.</source>
-        <translation>Erro: Criação de transação falhou.</translation>
+        <source>Error: Transaction creation failed!</source>
+        <translation>Erro: Criação da transação falhou!</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Erro: A transação foi rejeitada. Isto geralmente acontece quando algumas guaranys da sua carteira já foram gastas, e você está com uma cópia do arquivo wallet.dat e as guaranys foram utilizadas na cópia mas não na original.</translation>
+        <translation>Erro: A transação foi rejeitada. Isso pode acontecer se alguns dos guaranys de sua carteira já haviam sido gastos, por exemplo se você usou uma cópia do arquivo wallet.dat e alguns guaranys foram gastos na cópia mas não foram marcados como gastos aqui.</translation>
     </message>
 </context>
 <context>
@@ -1388,25 +1405,25 @@ Endereço: %4
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <location line="+24"/>
-        <location filename="../sendcoinsentry.cpp" line="+25"/>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Coloque a etiqueta para este endereço para o adicionar em seu livro de endereços</translation>
+        <location line="+34"/>
+        <source>The address to send the payment to (starts with G)</source>
+        <translation>O endereço para onde enviar o pagamento (starts with G)</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+60"/>
+        <location filename="../sendcoinsentry.cpp" line="+26"/>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>Digite uma etiqueta para este endereço para adicioná-lo ao catálogo de endereços</translation>
+    </message>
+    <message>
+        <location line="-78"/>
         <source>&amp;Label:</source>
         <translation>&amp;Etiqueta:</translation>
     </message>
     <message>
-        <location line="+18"/>
-        <source>The address to send the payment to  (e.g. GUARANYxuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</source>
-        <translation>O endereço para enviar o pagamento (ex: GUARANY6xuKuQ7JV7M9rGDoxdbYwV5zgQJ)</translation>
-    </message>
-    <message>
-        <location line="+10"/>
+        <location line="+28"/>
         <source>Choose address from address book</source>
-        <translation>Escolher endereço a partir do livro de endereços</translation>
+        <translation>Escolha um endereço do seu catálogo</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1416,7 +1433,7 @@ Endereço: %4
     <message>
         <location line="+7"/>
         <source>Paste address from clipboard</source>
-        <translation>Colar endereço a partir da área de transferência</translation>
+        <translation>Colar o endereço da área de transferência</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1426,12 +1443,12 @@ Endereço: %4
     <message>
         <location line="+7"/>
         <source>Remove this recipient</source>
-        <translation>Remove este destinatário</translation>
+        <translation>Remover este destinatário</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a valid Guarany address</source>
-        <translation>Coloque um endereço Guarany válido </translation>
+        <source>Enter a Guarany address (starts with G)</source>
+        <translation>Digite um endereço Guarany (starts with G)</translation>
     </message>
 </context>
 <context>
@@ -1443,36 +1460,35 @@ Endereço: %4
     </message>
     <message>
         <location line="+13"/>
-        <location line="+124"/>
         <source>&amp;Sign Message</source>
         <translation>&amp;Assinar Mensagem</translation>
     </message>
     <message>
-        <location line="-118"/>
+        <location line="+6"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Você pode assinar a mensagem com o seu endereço para provar que te pertence. Tenha cuidado, não assine com qualquer coisa, ataques de phishing podem tentar pegar sua assinatura. Apenas assinaturas com bastante detalhes devem ser aceitas.</translation>
+        <translation>Você pode assinar mensagens com seus endereços para provar que você é o dono deles. Seja cuidadoso para não assinar algo vago, pois ataques de pishing podem tentar te enganar para dar sua assinatura de identidade para eles. Apenas assine afirmações completamente detalhadas com as quais você concorda.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with </source>
-        <translation>O endereço para assinar a mensagem com </translation>
+        <source>The address to sign the message with (starts with G)</source>
+        <translation>Endereço a ser usado para assinar a mensagem (starts with G)</translation>
     </message>
     <message>
         <location line="+10"/>
-        <location line="+203"/>
+        <location line="+213"/>
         <source>Choose an address from the address book</source>
-        <translation>Escolha um endereço a partir do livro de endereços</translation>
+        <translation>Escolha um endereço do catálogo</translation>
     </message>
     <message>
-        <location line="-193"/>
-        <location line="+203"/>
+        <location line="-203"/>
+        <location line="+213"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location line="-193"/>
+        <location line="-203"/>
         <source>Paste address from clipboard</source>
-        <translation>Cole o endereço a partir da área de transferência</translation>
+        <translation>Colar o endereço da área de transferência</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1482,76 +1498,90 @@ Endereço: %4
     <message>
         <location line="+12"/>
         <source>Enter the message you want to sign here</source>
-        <translation>Coloque a mensagem que você deseja assinar aqui</translation>
+        <translation>Entre a mensagem que você quer assinar aqui</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+7"/>
+        <source>Signature</source>
+        <translation>Assinatura</translation>
+    </message>
+    <message>
+        <location line="+27"/>
         <source>Copy the current signature to the system clipboard</source>
-        <translation>Copiar a atual assinatura para a área de transferência do sistema</translation>
+        <translation>Copiar a assinatura para a área de transferência do sistema</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Sign the message to prove you own this Guarany address</source>
-        <translation>Assinar mensagem apra provar que é do seu endereço Guarany</translation>
+        <translation>Assinar mensagem para provar que você é dono deste endereço Guarany</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+3"/>
+        <source>Sign &amp;Message</source>
+        <translation>Assinar &amp;Mensagem</translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Reset all sign message fields</source>
-        <translation>Resetar todos os campos de assinatura de mensagem</translation>
+        <translation>Limpar todos os campos de assinatura da mensagem</translation>
     </message>
     <message>
         <location line="+3"/>
         <location line="+146"/>
         <source>Clear &amp;All</source>
-        <translation>Limpar &amp;Tudo</translation>
+        <translation>Limpar Tudo</translation>
     </message>
     <message>
         <location line="-87"/>
-        <location line="+70"/>
         <source>&amp;Verify Message</source>
         <translation>&amp;Verificar Mensagem</translation>
     </message>
     <message>
-        <location line="-64"/>
+        <location line="+6"/>
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Coloque o endereço da assinatura, mensagem (tenha certeza que copiou quebras de linhas, espaços, abas, etc. extamente igual) e coloque a asisnatura abaixo para verificar a mensagem. Tenha cuidado para não ler mais na assinatura do que o que está na mensagem assinada em si, para evitar ser enganado por um ataque man-in-the-middle.</translation>
+        <translation>Forneça o endereço da assinatura, a mensagem (se assegure que você copiou quebras de linha, espaços, tabs, etc. exatamente) e a assinatura abaixo para verificar a mensagem. Cuidado para não ler mais na assinatura do que está escrito na mensagem propriamente, para evitar ser vítima de uma ataque do tipo &quot;man-in-the-middle&quot;.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with </source>
-        <translation>O endereço da mensagem foi assinado com </translation>
+        <source>The address the message was signed with (starts with G)</source>
+        <translation>O endereço usado para assinar a mensagem (starts with G)</translation>
     </message>
     <message>
         <location line="+40"/>
         <source>Verify the message to ensure it was signed with the specified Guarany address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com um endereço Guarany específico</translation>
+        <translation>Verificar mensagem para se assegurar que ela foi assinada pelo dono de um endereço Guarany específico.</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+3"/>
+        <source>Verify &amp;Message</source>
+        <translation>Verificar %Mensagem</translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Reset all verify message fields</source>
-        <translation>Resetar todos os campos da verificação de mensagem</translation>
+        <translation>Limpar todos os campos de assinatura da mensagem</translation>
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a valid Guarany address</source>
-        <translation>Coloque um endereço Guarany válido</translation>
+        <source>Enter a Guarany address (starts with G)</source>
+        <translation>Digite um endereço Guarany (starts with G)</translation>
     </message>
     <message>
         <location line="-2"/>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Clique em &quot;Assinar Mensagem&quot; para gerar uma assinatura</translation>
+        <translation>Clique em &quot;Assinar Mensagem&quot; para gerar a assinatura</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Enter Guarany signature</source>
-        <translation>Coloque a assinatura Guarany</translation>
+        <translation>Entre com a assinatura Guarany</translation>
     </message>
     <message>
         <location line="+82"/>
         <location line="+81"/>
         <source>The entered address is invalid.</source>
-        <translation>O endereço adicionado é inválido.</translation>
+        <translation>O endereço fornecido é inválido.</translation>
     </message>
     <message>
         <location line="-81"/>
@@ -1565,22 +1595,22 @@ Endereço: %4
         <location line="-81"/>
         <location line="+81"/>
         <source>The entered address does not refer to a key.</source>
-        <translation>O endereço fornecido não refere a uma chave.</translation>
+        <translation>O endereço fornecido não se refere a uma chave.</translation>
     </message>
     <message>
         <location line="-73"/>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Desbloqueio da carteira foi cancelado.</translation>
+        <translation>Destravamento da Carteira foi cancelado.</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Private key for the entered address is not available.</source>
-        <translation>A chave privada para o endereço selecionado não é válida.</translation>
+        <translation>A chave privada para o endereço fornecido não está disponível.</translation>
     </message>
     <message>
         <location line="+12"/>
         <source>Message signing failed.</source>
-        <translation>Assinatura de mensagem falhou.</translation>
+        <translation>Assinatura da mensagem falhou.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1601,12 +1631,12 @@ Endereço: %4
     <message>
         <location line="+0"/>
         <source>The signature did not match the message digest.</source>
-        <translation>A assinatura não confere com o resumo da mensagem.</translation>
+        <translation>A assinatura não corresponde ao &quot;resumo da mensagem&quot;.</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Message verification failed.</source>
-        <translation>Verificação de mensagem falhou.</translation>
+        <translation>Verificação da mensagem falhou.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1615,29 +1645,34 @@ Endereço: %4
     </message>
 </context>
 <context>
+    <name>SplashScreen</name>
+    <message>
+        <location filename="../splashscreen.cpp" line="+22"/>
+        <source>The Guarany developers</source>
+        <translation>Desenvolvedores do Guarany</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>[testnet]</source>
+        <translation>[testnet]</translation>
+    </message>
+</context>
+<context>
     <name>TransactionDesc</name>
     <message>
-        <location filename="../transactiondesc.cpp" line="+19"/>
+        <location filename="../transactiondesc.cpp" line="+20"/>
         <source>Open until %1</source>
         <translation>Aberto até %1</translation>
     </message>
-    <message numerus="yes">
-        <location line="-2"/>
-        <source>Open for %n block(s)</source>
-        <translation>
-            <numerusform>Aberto por %n bloco</numerusform>
-            <numerusform>Aberto por %n blocos</numerusform>
-        </translation>
-    </message>
     <message>
-        <location line="+8"/>
+        <location line="+6"/>
         <source>%1/offline</source>
-        <translation>%1/desligado</translation>
+        <translation>%1/offline</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1/unconfirmed</source>
-        <translation>%1/não confirmado</translation>
+        <translation>%1/não confirmadas</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1652,10 +1687,7 @@ Endereço: %4
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation>
-            <numerusform>, transmitido através de %n nodo</numerusform>
-            <numerusform>, transmitido através de %n nodos</numerusform>
-        </translation>
+        <translation><numerusform>, difundir atráves de %n nó</numerusform><numerusform>, difundir atráves de %n nós</numerusform></translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1670,7 +1702,7 @@ Endereço: %4
     <message>
         <location line="+0"/>
         <source>Generated</source>
-        <translation>Gerado</translation>
+        <translation>Gerados</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1689,7 +1721,7 @@ Endereço: %4
         <location line="-77"/>
         <location line="+2"/>
         <source>own address</source>
-        <translation>próprio endereço</translation>
+        <translation>seu próprio endereço</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1703,15 +1735,12 @@ Endereço: %4
         <location line="+17"/>
         <location line="+30"/>
         <source>Credit</source>
-        <translation>Credito</translation>
+        <translation>Crédito</translation>
     </message>
     <message numerus="yes">
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
-        <translation>
-            <numerusform>matura em mais %n bloco</numerusform>
-            <numerusform>matura em mais %n bloocos</numerusform>
-        </translation>
+        <translation><numerusform>matura em mais %n bloco</numerusform><numerusform>matura em mais %n blocos</numerusform></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1734,7 +1763,7 @@ Endereço: %4
     <message>
         <location line="+16"/>
         <source>Net amount</source>
-        <translation>Quantidade total</translation>
+        <translation>Valor líquido</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -1753,26 +1782,21 @@ Endereço: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Generated coins must mature 520 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Guaranys geradas devem amadurecer uma quantidade de blocos antes que possam ser gastas. Quando é gerado neste bloco, que foi transmitido para a rede a ser adicionado à cadeia de blocos. Se não conseguir entrar na cadeia, o seu estado mudará para &quot;não aceito&quot; e não poderá ser gasto. Isto ocasionalmente pode acontecer se um nodo gera um bloco alguns segundos antes de você.</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Staked coins must wait 520 blocks before they can return to balance and be spent.  When you generated this proof-of-stake block, it was broadcast to the network to be added to the block chain.  If it fails to get into the chain, it will change to \"not accepted\" and not be a valid stake.  This may occasionally happen if another node generates a proof-of-stake block within a few seconds of yours.</source>
-        <translation>Guaranys em modo Stake (gerando juros) precisam ficar por uma quantidade de blocos gerando, antes de voltar ao seu balanço para ser gasto. Enquanto está gerando blocos proof-of-stake, será enviada pela rede e adicionada ao block chain. Se falhar será adicionada como \"não aceita"\ e não será validada como como stake. Isto geralmente ocorre quando algum nodo gera bloco proof-of-stake antes de você.</translation>
+        <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Guaranys gerados precisam maturar por 120 blocos antes de serem gastos. Quando você gera este bloco, ele é difundido na rede para ser adicionado ao blockchain. Se ele falhar ao ser acrescentado no blockchain, seu estado mudará para &quot;não aceito&quot; e não poderá ser gasto. Isso pode ocasionamente acontecer se outro nó gerou um bloco poucos segundos antes do seu.</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Debug information</source>
-        <translation>Informação de Debug</translation>
+        <translation>Informação de depuração</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Transaction</source>
-        <translation>Transações</translation>
+        <translation>Transação</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+3"/>
         <source>Inputs</source>
         <translation>Entradas</translation>
     </message>
@@ -1792,12 +1816,17 @@ Endereço: %4
         <translation>falso</translation>
     </message>
     <message>
-        <location line="-211"/>
+        <location line="-209"/>
         <source>, has not been successfully broadcast yet</source>
-        <translation>, não foi transmitido com sucesso ainda</translation>
+        <translation>, ainda não foi propagada na rede com sucesso.</translation>
+    </message>
+    <message numerus="yes">
+        <location line="-35"/>
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Abrir para mais %n bloco</numerusform><numerusform>Abrir para mais %n blocos</numerusform></translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+70"/>
         <source>unknown</source>
         <translation>desconhecido</translation>
     </message>
@@ -1812,13 +1841,13 @@ Endereço: %4
     <message>
         <location line="+6"/>
         <source>This pane shows a detailed description of the transaction</source>
-        <translation>Este painel mostra com detalhes a descrição da transação</translation>
+        <translation>Este painel mostra uma descrição detalhada da transação</translation>
     </message>
 </context>
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+226"/>
+        <location filename="../transactiontablemodel.cpp" line="+225"/>
         <source>Date</source>
         <translation>Data</translation>
     </message>
@@ -1839,11 +1868,8 @@ Endereço: %4
     </message>
     <message numerus="yes">
         <location line="+57"/>
-        <source>Open for %n block(s)</source>
-        <translation>
-            <numerusform>Aberto por %n bloco</numerusform>
-            <numerusform>Aberto por %n blocos</numerusform>
-        </translation>
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Abrir para mais %n bloco</numerusform><numerusform>Abrir para mais %n blocos</numerusform></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1858,7 +1884,7 @@ Endereço: %4
     <message>
         <location line="+3"/>
         <source>Unconfirmed (%1 of %2 confirmations)</source>
-        <translation>Não confirmado (%1 de %2 confirmações)</translation>
+        <translation>Não confirmado (%1 of %2 confirmações)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1868,15 +1894,12 @@ Endereço: %4
     <message numerus="yes">
         <location line="+8"/>
         <source>Mined balance will be available when it matures in %n more block(s)</source>
-        <translation>
-            <numerusform>Balanço minerado estará disponível quando maturar mais %n bloco</numerusform>
-            <numerusform>Balanços minerados estarão disponíveis quando maturarem mais %n blocos</numerusform>
-        </translation>
+        <translation><numerusform>Saldo minerado vai estar disponível quando ele maturar em mais %n bloco</numerusform><numerusform>Saldo minerado vai estar disponível quando ele maturar em mais %n blocos</numerusform></translation>
     </message>
     <message>
         <location line="+5"/>
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Este bloco não foi recebido por outros nodos e provavelmente não será aceito!</translation>
+        <translation>Este bloco não foi recebido por nenhum outro participante da rede e provavelmente não será aceito!</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1886,7 +1909,7 @@ Endereço: %4
     <message>
         <location line="+43"/>
         <source>Received with</source>
-        <translation>Recebido com</translation>
+        <translation>Recebido por</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1896,12 +1919,12 @@ Endereço: %4
     <message>
         <location line="+3"/>
         <source>Sent to</source>
-        <translation>Enviar para</translation>
+        <translation>Enviado para</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Payment to yourself</source>
-        <translation>Pagar para você mesmo</translation>
+        <translation>Pagamento para você mesmo</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1909,48 +1932,43 @@ Endereço: %4
         <translation>Minerado</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Minted</source>
-        <translation>Criado</translation>
-    </message>
-    <message>
         <location line="+38"/>
         <source>(n/a)</source>
-        <translation>(n/i)</translation>
+        <translation>(n/a)</translation>
     </message>
     <message>
         <location line="+199"/>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>Status da transação. Passe o mouse sobre este campo para ver o número de confirmações.</translation>
+        <translation>Status da transação. Passe o mouse sobre este campo para mostrar o número de confirmações.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Date and time that the transaction was received.</source>
-        <translation>Data e tempo que a transação foi recebida.</translation>
+        <translation>Data e hora em que a transação foi recebida.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Type of transaction.</source>
-        <translation>Tipo da transação.</translation>
+        <translation>Tipo de transação.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Destination address of transaction.</source>
-        <translation>Endereço destino da transação.</translation>
+        <translation>Endereço de destino da transação.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Amount removed from or added to balance.</source>
-        <translation>Quantidade removida ou adicionada ao balanço.</translation>
+        <translation>Quantidade debitada ou creditada ao saldo.</translation>
     </message>
 </context>
 <context>
     <name>TransactionView</name>
     <message>
-        <location filename="../transactionview.cpp" line="+55"/>
+        <location filename="../transactionview.cpp" line="+52"/>
         <location line="+16"/>
         <source>All</source>
-        <translation>Tudo</translation>
+        <translation>Todos</translation>
     </message>
     <message>
         <location line="-15"/>
@@ -1970,7 +1988,7 @@ Endereço: %4
     <message>
         <location line="+1"/>
         <source>Last month</source>
-        <translation>Último mês</translation>
+        <translation>Mês passado</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1980,12 +1998,12 @@ Endereço: %4
     <message>
         <location line="+1"/>
         <source>Range...</source>
-        <translation>Extensão...</translation>
+        <translation>Intervalo...</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>Received with</source>
-        <translation>Recebido com</translation>
+        <translation>Recebido por</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2004,23 +2022,18 @@ Endereço: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>Minted</source>
-        <translation>Criado</translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Other</source>
         <translation>Outro</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Enter address or label to search</source>
-        <translation>Coloque um endereço ou etiqueta para procurar</translation>
+        <translation>Procure um endereço ou etiqueta</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Min amount</source>
-        <translation>Quantidade Mínima</translation>
+        <translation>Quantidade mínima</translation>
     </message>
     <message>
         <location line="+34"/>
@@ -2035,7 +2048,12 @@ Endereço: %4
     <message>
         <location line="+1"/>
         <source>Copy amount</source>
-        <translation>Copiar quantidade</translation>
+        <translation>Copiar quantia</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy transaction ID</source>
+        <translation>Copiar ID da transação</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2048,14 +2066,14 @@ Endereço: %4
         <translation>Mostrar detalhes da transação</translation>
     </message>
     <message>
-        <location line="+142"/>
+        <location line="+139"/>
         <source>Export Transaction Data</source>
-        <translation>Exportar dados da transação</translation>
+        <translation>Exportar Dados das Transações</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Comma separated file (*.csv)</source>
-        <translation>Arquivos separados por vírgula (*.csv)</translation>
+        <translation>Arquivo separado por vírgulas (*. csv)</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -2100,12 +2118,12 @@ Endereço: %4
     <message>
         <location line="+0"/>
         <source>Could not write to file %1.</source>
-        <translation>Não pode escrever no arquivo %1.</translation>
+        <translation>Não foi possível gravar no arquivo %1.</translation>
     </message>
     <message>
-        <location line="+95"/>
+        <location line="+100"/>
         <source>Range:</source>
-        <translation>Distancia:</translation>
+        <translation>Intervalo: </translation>
     </message>
     <message>
         <location line="+8"/>
@@ -2116,337 +2134,575 @@ Endereço: %4
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+192"/>
-        <source>Sending...</source>
-        <translation>Enviando...</translation>
+        <location filename="../walletmodel.cpp" line="+193"/>
+        <source>Send Coins</source>
+        <translation>Send Coins</translation>
+    </message>
+</context>
+<context>
+    <name>WalletView</name>
+    <message>
+        <location filename="../walletview.cpp" line="+42"/>
+        <source>&amp;Export</source>
+        <translation>&amp;Exportar</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Exportar os dados na aba atual para um arquivo</translation>
+    </message>
+    <message>
+        <location line="+193"/>
+        <source>Backup Wallet</source>
+        <translation>Fazer cópia de segurança da Carteira</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Dados da Carteira (*.dat)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Backup Failed</source>
+        <translation>Cópia de segurança Falhou</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>There was an error trying to save the wallet data to the new location.</source>
+        <translation>Houve um erro ao tentar salvar os dados da carteira para uma nova localização.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Backup Successful</source>
+        <translation>Backup feito com sucesso</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The wallet data was successfully saved to the new location.</source>
+        <translation>Os dados da carteira foram salvos com sucesso na nova localização</translation>
     </message>
 </context>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+82"/>
+        <location filename="../bitcoinstrings.cpp" line="+94"/>
         <source>Guarany version</source>
-        <translation>Versão da Guarany</translation>
+        <translation>Versão do Guarany</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+102"/>
         <source>Usage:</source>
         <translation>Uso:</translation>
     </message>
     <message>
-        <location line="-25"/>
-        <source>Send command to -server or bitcoind</source>
+        <location line="-29"/>
+        <source>Send command to -server or guaranyd</source>
         <translation>Enviar comando para -server ou guaranyd</translation>
     </message>
     <message>
-        <location line="-19"/>
+        <location line="-23"/>
         <source>List commands</source>
         <translation>Lista de comandos</translation>
     </message>
     <message>
-        <location line="-11"/>
+        <location line="-12"/>
         <source>Get help for a command</source>
-        <translation>Receber ajuda para um comando</translation>
+        <translation>Obtenha ajuda sobre um comando</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+24"/>
         <source>Options:</source>
         <translation>Opções:</translation>
     </message>
     <message>
-        <location line="+23"/>
-        <source>Specify configuration file (default: Guarany.conf)</source>
-        <translation>Arquivo de configuração específico (padrão: Guarany.conf)</translation>
+        <location line="+24"/>
+        <source>Specify configuration file (default: guarany.conf)</source>
+        <translation>Especifique um arquivo de configurações (padrão: guarany.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Guaranyd.pid)</source>
-        <translation>Arquivo pid específico (padrão: Guaranyd.pid)</translation>
+        <source>Specify pid file (default: guaranyd.pid)</source>
+        <translation>Especifique um arquivo de pid (padrão: guaranyd.pid)</translation>
     </message>
     <message>
-        <location line="-47"/>
-        <source>Generate coins</source>
-        <translation>Gerar Guaranys</translation>
-    </message>
-    <message>
-        <location line="-14"/>
-        <source>Don&apos;t generate coins</source>
-        <translation>Não gerar Guaranys</translation>
-    </message>
-    <message>
-        <location line="+60"/>
+        <location line="-1"/>
         <source>Specify data directory</source>
-        <translation>Especificar pasta de dados</translation>
+        <translation>Especificar diretório de dados</translation>
     </message>
     <message>
-        <location line="-8"/>
+        <location line="-9"/>
         <source>Set database cache size in megabytes (default: 25)</source>
-        <translation>Configura o tamanho do cache de base de dados em megabytes (padrão: 25)</translation>
+        <translation>Definir o tamanho do cache do banco de dados em megabytes (padrão: 25)</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Set database disk log size in megabytes (default: 100)</source>
-        <translation>Configura o tamanho do arquivo de log em megabytes (padrão: 100)</translation>
-    </message>
-    <message>
-        <location line="-26"/>
-        <source>Listen for connections on &lt;port&gt; (default: 7777 or testnet: 17777)</source>
-        <translation>Aberto para conexões na porta &lt;port&gt; (padrão: 8744 or testnet: 18744)</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Manter mais que &lt;n&gt; conexões aos peers (padrão: 125)</translation>
-    </message>
-    <message>
-        <location line="-33"/>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Conectar em um nodo para recuperar endereços de peer e desconectar</translation>
-    </message>
-    <message>
-        <location line="+64"/>
-        <source>Specify your own public address</source>
-        <translation>Especifique o seu próprio endereço público</translation>
-    </message>
-    <message>
-        <location line="-75"/>
-        <source>Bind to given address. Use [host]:port notation for IPv6</source>
-        <translation>Vincular ao endereço fornecido. Use [host]:port notação pelo IPv6</translation>
-    </message>
-    <message>
-        <location line="+77"/>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Regras para desconectar peers mal-comportados (padrão: 100)</translation>
-    </message>
-    <message>
-        <location line="-112"/>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Número de segundo para manter peers mal-comportando para reconectar(padrão: 86400)</translation>
-    </message>
-    <message>
-        <location line="-25"/>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>Ocorreu um erro ao configurar a porta RPC %u para com IPv4: %s</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Detach block and address databases. Increases shutdown time (default: 0)</source>
-        <translation>Desanexar base de dados e de endereços. Aumenta o tempo de desligamento (padrão: 0)</translation>
+        <location line="-28"/>
+        <source>Listen for connections on &lt;port&gt; (default: 45444 or testnet: 55444)</source>
+        <translation>Procurar por conexões em &lt;port&gt; (padrão: 45444 ou testnet:55444)</translation>
     </message>
     <message>
         <location line="+5"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Erro: A transação foi rejeitada. Isto geralmente acontece quando as suas guaranys já foram gastas, ou você usou uma cópia da carteira e as moedas já foram gastas pela original.</translation>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation>Manter no máximo &lt;n&gt; conexões aos peers (padrão: 125)</translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds  </source>
-        <translation>Erro: Esta transação requer que você pague uma taxa de pelo menos %s por causa de sua quantidade, complexidade ou utilização de fundos recebidos recentemente </translation>
+        <location line="-48"/>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation>Conectar a um nó para receber endereços de participantes, e desconectar.</translation>
     </message>
     <message>
-        <location line="+6"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8344 or testnet: 18344)</source>
-        <translation>Listar para conexões JSON-RPC na &lt;porta&gt; (padrão: 8745 ou testnet: 18745) </translation>
+        <location line="+82"/>
+        <source>Specify your own public address</source>
+        <translation>Especificar seu próprio endereço público</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+3"/>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation>Limite para desconectar peers mal comportados (padrão: 100)</translation>
+    </message>
+    <message>
+        <location line="-134"/>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation>Número de segundos para impedir que peers mal comportados reconectem (padrão: 86400)</translation>
+    </message>
+    <message>
+        <location line="-29"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
+        <translation>Um erro ocorreu ao configurar a porta RPC %u para escuta em IPv4: %s</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 45443 or testnet: 145443)</source>
+        <translation>Escutar conexões JSON-RPC na porta &lt;porta&gt; (padrão: 45443 ou testnet: 145443)</translation>
+    </message>
+    <message>
+        <location line="+37"/>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Aceitar linha de comando e comandos JSON-RPC</translation>
     </message>
     <message>
-        <location line="+26"/>
-        <source>Error: Transaction creation failed  </source>
-        <translation>Erro: Criação de transação falhou </translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Error: Wallet locked, unable to create transaction  </source>
-        <translation>Erro: Carteira bloqueada, não pode criar transação </translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Importing blockchain data file.</source>
-        <translation>Importando arquivo de dados do blockchain</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Importing bootstrap blockchain data file.</source>
-        <translation>Importando dados bootstrap do arquivo blockchain</translation>
-    </message>
-    <message>
-        <location line="+23"/>
+        <location line="+76"/>
         <source>Run in the background as a daemon and accept commands</source>
-        <translation>Rodar em segundo plano como um daemon e aceitar comandos</translation>
+        <translation>Rodar em segundo plano como serviço e aceitar comandos</translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+37"/>
         <source>Use the test network</source>
-        <translation>Usar a rede testnet</translation>
+        <translation>Usar rede de teste</translation>
     </message>
     <message>
-        <location line="-93"/>
+        <location line="-112"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Aceitar conexões de fora (padrão: 1 para não -proxy ou -connect)</translation>
+        <translation>Aceitar conexões externas (padrão: 1 se opções -proxy ou -connect não estiverem presentes)</translation>
     </message>
     <message>
-        <location line="-53"/>
+        <location line="-80"/>
+        <source>%s, you must set a rpcpassword in the configuration file:
+%s
+It is recommended you use the following random password:
+rpcuser=guaranyrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+It is also recommended to set alertnotify so you are notified of problems;
+for example: alertnotify=echo %%s | mail -s &quot;Guarany Alert&quot; admin@foo.com
+</source>
+        <translation>%s, você deve especificar uma senha rpcpassword no arquivo de configuração:⏎
+%s⏎
+É recomendado que você use a seguinte senha aleatória:⏎
+rpcuser=guaranyrpc⏎
+rpcpassword=%s⏎
+(você não precisa lembrar esta senha)⏎
+O nome de usuário e a senha NÃO PODEM ser os mesmos.⏎
+Se o arquivo não existir, crie um com permissão de leitura apenas para o dono.⏎
+É recomendado também definir um alertnotify para que você seja notificado de problemas;⏎
+por exemplo: alertnotify=echo %%s | mail -s &quot;Guarany Alert&quot; admin@foo.com⏎
+</translation>
+    </message>
+    <message>
+        <location line="+17"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>Ocorreu um erro ao configurar a porta RPC %u para IPv6, voltando para IPv4: %s</translation>
+        <translation>Um erro ocorreu ao configurar a porta RPC %u para escuta em IPv6, voltando ao IPv4: %s</translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
-        <translation>Erro ao inicializar o ambiente de base de dados %s! Para recuper, faça BACKUP DE TODA A PASTA, então remova tudo, exceto o arquivo wallet.dat</translation>
+        <location line="+3"/>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation>Vincular ao endereço fornecido e sempre escutar nele. Use a notação [host]:port para IPv6</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+3"/>
+        <source>Cannot obtain a lock on data directory %s. Guarany is probably already running.</source>
+        <translation>Não foi possível obter exclusividade de escrita no endereço %s. O Guarany provavelmente já está rodando.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Erro: A transação foi rejeitada. Isso pode acontecer se alguns dos guaranys de sua carteira já haviam sido gastos, por exemplo se você usou uma cópia do arquivo wallet.dat e alguns guaranys foram gastos na cópia mas não foram marcados como gastos aqui.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Erro: Esta transação requer uma taxa de transação de pelo menos %s, por causa sua quantidade, complexidade ou uso de dinheiro recebido recentemente.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when a relevant alert is received (%s in cmd is replaced by message)</source>
+        <translation>Executar comando quando um alerta relevante for recebido (%s no comando será substituído pela mensagem)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation>Executar comando quando uma transação da carteira mudar (%s no comando será substituído por TxID)</translation>
+    </message>
+    <message>
+        <location line="+11"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
-        <translation>Defina o tamanho máximo de transações / baixa taxa de alta prioridade em bytes (padrão: 27000)</translation>
+        <translation>Determinar tamanho máximo de transações de alta-prioridade/baixa-taxa em bytes (padrão: 27000)</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+        <translation>Este pode ser um build de teste pré-lançamento - use por sua conta e risco - não use para mineração ou aplicações de comércio.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Aviso: -paytxfee está configurado como muito algo! Esta é a taxa que você irá pagar quando enviar uma transação.</translation>
+        <translation>Cuidado: valor de -paytxfee escolhido é muito alto! Este é o valor da taxa de transação que você irá pagar se enviar a transação.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Aviso: Amostragem de transações não está correta! Talvez você precise fazer atualização ou entrar em outro node.</translation>
+        <translation>Cuidado: Transações mostradas podem não estar corretas! Você pode precisar atualizar, ou outros nós podem precisar atualizar o cliente.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Guarany will not work properly.</source>
-        <translation>Aviso: Por favor, verifique se a data do seu computador está correta! Se seu relógio estiver errado a Guarany não irá funcionar corretamente.</translation>
+        <translation>Cuidado: Por favor, verifique que a data e hora do seu computador estão corretas! If o seu relógio estiver errado, o Guarany não irá funcionar corretamente.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Aviso: Erro ao ler o arquivo wallet.dat! Todas as chaves lidas estaão corretas, mas os dados de transação e livro de endereços estão perdidos ou incorretos.</translation>
+        <translation>Cuidado: erro ao ler arquivo wallet.dat! Todas as chaves foram lidas corretamente, mas dados transações e do catálogo de endereços podem estar faltando ou estar incorretas.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Aviso: salvamento de dados na wallet.dat corrompido! Arquivo original wallet.dat salvo como carteira. {timestamp}.bak em %s; se o seu balanço ou transações estão incorretos, talvez seja necessário restaurar backup.</translation>
+        <translation>Aviso: wallet.dat corrompido, dados recuperados! Arquivo wallet.dat original salvo como wallet.{timestamp}.bak em %s; se seu saldo ou transações estiverem incorretos, você deve restauras o backup.</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Tentativa de recuperação de arquivo wallet.dat corrompido</translation>
+        <translation>Tentar recuperar chaves privadas de um arquivo wallet.dat corrompido</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+2"/>
         <source>Block creation options:</source>
         <translation>Opções de criação de blocos:</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Connect only to the specified node(s)</source>
-        <translation>Conectar apenas em nodos especificados</translation>
+        <translation>Conectar apenas a nó(s) específico(s)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Descobrir o próprio endereço IP (padrão: 1 quando estiver listando e não -externalip)</translation>
+        <source>Corrupted block database detected</source>
+        <translation>Detectado Banco de dados de blocos corrompido</translation>
     </message>
     <message>
-        <location line="+11"/>
-        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Falha ao listar em qualquer porta. Utilize -listen=0 se você deseja isso.</translation>
+        <location line="+1"/>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation>Descobrir os próprios endereços IP (padrão: 1 quando no modo listening e opção -externalip não estiver presente)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation>Você quer reconstruir o banco de dados de blocos agora?</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Find peers using DNS lookup (default: 0)</source>
-        <translation>Procurar peers usando DNS lookup (padrão: 0)</translation>
+        <source>Error initializing block database</source>
+        <translation>Erro ao inicializar banco de dados de blocos</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+1"/>
+        <source>Error initializing wallet database environment %s!</source>
+        <translation>Erro ao inicializar ambiente de banco de dados de carteira %s!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading block database</source>
+        <translation>Erro ao carregar banco de dados de blocos</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error opening block database</source>
+        <translation>Erro ao abrir banco de dados de blocos</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Error: Disk space is low!</source>
+        <translation>Erro: Espaço em disco insuficiente!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation>Erro: Carteira travada, impossível criar transação!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: system error: </source>
+        <translation>Erro: erro de sistema</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation>Falha ao escutar em qualquer porta. Use -listen=0 se você quiser isso.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to read block info</source>
+        <translation>Falha ao ler informação de bloco</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to read block</source>
+        <translation>Falha ao ler bloco</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to sync block index</source>
+        <translation>Falha ao sincronizar índice de blocos</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block index</source>
+        <translation>Falha ao escrever índice de blocos</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block info</source>
+        <translation>Falha ao escrever informações de bloco</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block</source>
+        <translation>Falha ao escrever bloco</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write file info</source>
+        <translation>Falha ao escrever informções de arquivo</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write to coin database</source>
+        <translation>Falha ao escrever banco de dados de moedas</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write transaction index</source>
+        <translation>Falha ao escrever índice de transações</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write undo data</source>
+        <translation>Falha ao escrever dados para desfazer ações</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
+        <translation>Procurar pares usando consulta de DNS (padrão: 1 a menos que a opção -connect esteja presente)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Generate coins (default: 0)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
+        <translation>Quantos blocos checar ao inicializar (padrão: 288, 0 = todos)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>How thorough the block verification is (0-4, default: 3)</source>
+        <translation>Quão minuciosa é a verificação dos blocos (0-4, padrão: 3)</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Not enough file descriptors available.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Rebuild block chain index from current blk000??.dat files</source>
+        <translation>Reconstruir índice de blockchain a partir dos arquivos atuais blk000??.dat</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Set the number of threads to service RPC calls (default: 4)</source>
+        <translation>Defina o número de threads de script de verificação. (Padrão: 4)</translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Verifying blocks...</source>
+        <translation>Verificando blocos...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Verifying wallet...</source>
+        <translation>Verificando carteira...</translation>
+    </message>
+    <message>
+        <location line="-69"/>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation>Importar blocos de um arquivo externo blk000??.dat</translation>
+    </message>
+    <message>
+        <location line="-76"/>
+        <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+77"/>
+        <source>Information</source>
+        <translation>Informação</translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
         <translation>Endereço -tor inválido: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+1"/>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Maintain a full transaction index (default: 0)</source>
+        <translation>Manter índice completo de transações (padrão: 0)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>Buffer máximo recebido por conexão, &lt;n&gt;*1000 bytes (padrão: 5000)</translation>
+        <translation>Buffer máximo de recebimento por conexão, &lt;n&gt;*1000 bytes (padrão: 5000)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Envio máximo de buffer por conexão, &lt;n&gt;*1000 bytes (padrão: 1000)</translation>
+        <translation>Buffer máximo de envio por conexão, &lt;n&gt;*1000 bytes (padrão: 1000)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
+        <translation>Apenas aceitar cadeia de blocos correspondente a marcas de verificação internas (padrão: 1)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Conectar apenas em nodos com &lt;rede&gt; (IPv4, IPv6 ou Tor)</translation>
+        <translation>Apenas conectar em nós na rede &lt;net&gt; (IPv4, IPv6, ou Tor)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
-        <translation>Saída de informações de depuração extra. Implica todas as outras opções -debug*</translation>
+        <translation>Mostrar informações extras de depuração. Implica em outras opções -debug*</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Output extra network debugging information</source>
-        <translation>Saída de informações de depuração de rede extra</translation>
+        <translation>Mostrar informações extras de depuração da rede</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Prepend debug output with timestamp</source>
-        <translation>Saída de depuração com timestamp</translation>
+        <translation>Pré anexar a saída de debug com estampa de tempo</translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Oplçoes de SSL: (olhe na Wiki Bitcoin pelas instruções de configuração de SSL)</translation>
+        <location line="+5"/>
+        <source>SSL options: (see wiki.guarany.com for SSL setup instructions)</source>
+        <translation>Opções SSL: (veja a Wiki do Guarany para instruções de configuração SSL)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Select the version of socks proxy to use (4-5, default: 5)</source>
-        <translation>Selecione a versão do socks proxy para usar (4-5, padrão: 5)</translation>
+        <translation>Escolher versão do proxy socks a ser usada (4-5, padrão: 5)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Enviar informações trace / debug para o console, em vez de arquivo debug.log</translation>
+        <translation>Mandar informação de trace/debug para o console em vez de para o arquivo debug.log</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Send trace/debug info to debugger</source>
-        <translation>Enviar informações trace/debug info para o debugger</translation>
+        <translation>Mandar informação de trace/debug para o debugger</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+5"/>
         <source>Set maximum block size in bytes (default: 250000)</source>
-        <translation>Configurar o tamanho máximo dos blocos em bytes (padrão: 250000)</translation>
+        <translation>Determinar tamanho máximo de bloco em bytes (padrão: 250000)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Configurar o tamanho mínimo dos blocos em bytes (padrão: 0)</translation>
+        <translation>Determinar tamanho mínimo de bloco em bytes (padrão: 0)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation>Encolher arquivo debug.log ao iniciar o cliente (padrão 1 se opção -debug não estiver presente)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Dividir o arquivo debug.log ao iniciar o cliente (padrão: 1 quando não estiver -debug)</translation>
+        <source>Signing transaction failed</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+2"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Especificar o tempo limite de conexão em milisegundos (padrão: 5000)</translation>
+        <translation>Especifique o tempo limite (timeout) da conexão em milissegundos (padrão: 5000) </translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+4"/>
+        <source>System error: </source>
+        <translation>Erro de sistema:</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Transaction amount too small</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Transaction amounts must be positive</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Transaction too large</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>Usar UPnP para mapear portas de escuta (padrão: 0)</translation>
+        <translation>Usar UPnP para mapear porta de escuta (padrão: 0)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Usar UPnP para mapear portas de escuta (padrão: 1 enquanto estiver escutando)</translation>
+        <translation>Usar UPnP para mapear porta de escuta (padrão: 1 quando estiver escutando)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
-        <translation>Usar proxy para atingir serviços ocultos (padrão: mesmo que -proxy)</translation>
+        <translation>Usar proxy para alcançar serviços escondidos (padrão: mesmo que -proxy)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2454,82 +2710,67 @@ Endereço: %4
         <translation>Nome de usuário para conexões JSON-RPC</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Verifying database integrity...</source>
-        <translation>Verificando integridade da base de dados...</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Warning: Disk space is low!</source>
-        <translation>Aviso: Pouco espaço em disco!</translation>
+        <location line="+4"/>
+        <source>Warning</source>
+        <translation>Cuidado</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Aviso: Esta versão está obsoleta, atualização necessária!</translation>
+        <translation>Cuidado: Esta versão está obsoleta, atualização exigida!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>You need to rebuild the databases using -reindex to change -txindex</source>
+        <translation>Você precisa reconstruir os bancos de dados usando -reindex para mudar -txindex</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>wallet.dat corrupt, salvage failed</source>
-        <translation>Arquivo wallet.dat está corrompido, salvamento falhou</translation>
+        <translation>wallet.dat corrompido, recuperação falhou</translation>
     </message>
     <message>
-        <location line="-43"/>
+        <location line="-50"/>
         <source>Password for JSON-RPC connections</source>
         <translation>Senha para conexões JSON-RPC</translation>
     </message>
     <message>
-        <location line="-53"/>
+        <location line="-67"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Permitir conexões JSON-RPC de um endereço IP específico</translation>
+        <translation>Permitir conexões JSON-RPC de endereços IP específicos</translation>
     </message>
     <message>
-        <location line="+61"/>
+        <location line="+76"/>
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Enviar comandos para o nodo usando no&lt;ip&gt; (padrão: 127.0.0.1)</translation>
+        <translation>Enviar comando para nó rodando em &lt;ip&gt; (pardão: 127.0.0.1)</translation>
     </message>
     <message>
-        <location line="-99"/>
+        <location line="-120"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Executar comando quando o melhor bloco mudar (%s em cmd é substituito pelo hash do bloco)</translation>
+        <translation>Executar comando quando o melhor bloco mudar (%s no comando será substituído pelo hash do bloco)</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+147"/>
         <source>Upgrade wallet to latest format</source>
-        <translation>Atualizar a carteira para o ultimo formato</translation>
+        <translation>Atualizar carteira para o formato mais recente</translation>
     </message>
     <message>
-        <location line="-15"/>
+        <location line="-21"/>
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Configurar o tamanho da chave pool &lt;n&gt; (padrão: 100)</translation>
+        <translation>Determinar tamanho do pool de endereços para &lt;n&gt; (padrão: 100)</translation>
     </message>
     <message>
-        <location line="-14"/>
+        <location line="-12"/>
         <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Reescanear o block chain por transações perdidas da carteira</translation>
+        <translation>Re-escanear blocos procurando por transações perdidas da carteira</translation>
     </message>
     <message>
-        <location line="-24"/>
-        <source>How many blocks to check at startup (default: 2500, 0 = all)</source>
-        <translation>Quantos blocos para verificar ao iniciar (padrão: 2500, 0 = tudo)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>How thorough the block verification is (0-6, default: 1)</source>
-        <translation>Como a verificação completa dos blocos são feitas (0-6, padrão: 1)</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Imports blocks from external blk000?.dat file</source>
-        <translation>Importar blocos de um arquivo externo blk000?.dat</translation>
-    </message>
-    <message>
-        <location line="+51"/>
+        <location line="+35"/>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
         <translation>Usar OpenSSL (https) para conexões JSON-RPC</translation>
     </message>
     <message>
-        <location line="-21"/>
+        <location line="-26"/>
         <source>Server certificate file (default: server.cert)</source>
         <translation>Arquivo de certificado do servidor (padrão: server.cert)</translation>
     </message>
@@ -2539,212 +2780,158 @@ Endereço: %4
         <translation>Chave privada do servidor (padrão: server.pem)</translation>
     </message>
     <message>
-        <location line="-127"/>
+        <location line="-151"/>
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
-        <translation>Cifras aceitáveis (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
+        <translation>Algoritmos de criptografia aceitos (padrão: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
-        <location line="+139"/>
+        <location line="+165"/>
         <source>This help message</source>
         <translation>Esta mensagem de ajuda</translation>
     </message>
     <message>
-        <location line="-131"/>
-        <source>Cannot obtain a lock on data directory %s.  Guarany is probably already running.</source>
-        <translation>Não pode abrir a pasta de dados %s. Provavelmente a Guarany já está rodando.</translation>
-    </message>
-    <message>
-        <location line="+57"/>
-        <source>Guarany</source>
-        <translation>Guarany</translation>
-    </message>
-    <message>
-        <location line="+77"/>
+        <location line="+6"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>Não pode vincular %s neste computador (erro retornado ao fazer vinculação %d, %s)</translation>
+        <translation>Impossível vincular a %s neste computador (bind retornou erro %d, %s)</translation>
     </message>
     <message>
-        <location line="-69"/>
+        <location line="-91"/>
         <source>Connect through socks proxy</source>
-        <translation>Conectar atravpes de socks proxy</translation>
+        <translation>Conectar através de um proxy socks</translation>
     </message>
     <message>
-        <location line="-13"/>
+        <location line="-10"/>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Permitir pesquisa através de DNS com -addnode, -seednode e -connect</translation>
+        <translation>Permitir consultas DNS para -addnode, -seednode e -connect</translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+55"/>
         <source>Loading addresses...</source>
-        <translation>Abrindo endereços...</translation>
+        <translation>Carregando endereços...</translation>
     </message>
     <message>
-        <location line="-26"/>
-        <source>Error loading blkindex.dat</source>
-        <translation>Erro ao abrir blkindex.dat</translation>
-    </message>
-    <message>
-        <location line="+2"/>
+        <location line="-35"/>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Erro ao abrir wallet.dat: carteira corrompida</translation>
+        <translation>Erro ao carregar wallet.dat: Carteira corrompida</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error loading wallet.dat: Wallet requires newer version of Guarany</source>
-        <translation>Erro ao abrir wallet.dat: a carteira requer uma nova versão da Guarany</translation>
+        <translation>Erro ao carregar wallet.dat: Carteira requer uma versão mais nova do Guarany</translation>
     </message>
     <message>
-        <location line="+73"/>
+        <location line="+93"/>
         <source>Wallet needed to be rewritten: restart Guarany to complete</source>
-        <translation>Carteira precisa reescrever: reinicie a Guarany para completar</translation>
+        <translation>A Carteira precisou ser reescrita: reinicie o Guarany para completar</translation>
     </message>
     <message>
-        <location line="-75"/>
+        <location line="-95"/>
         <source>Error loading wallet.dat</source>
-        <translation>Erro ao abrir wallet.dat</translation>
+        <translation>Erro ao carregar wallet.dat</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+28"/>
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>Endereço -proxy inválido: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+56"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
         <translation>Rede desconhecida especificada em -onlynet: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="-1"/>
         <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Versão de proxy requerida com -socks desconhecida: %i</translation>
+        <translation>Versão desconhecida do proxy -socks requisitada: %i</translation>
     </message>
     <message>
-        <location line="-74"/>
+        <location line="-96"/>
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>Não pode vincular o endereço com -bind: &apos;%s&apos;</translation>
+        <translation>Impossível encontrar o endereço -bind: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>Não pode resolver o endereço com -externalip: &apos;%s&apos;</translation>
+        <translation>Impossível encontrar endereço -externalip: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+44"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Quantidade inválida com -paytxfee=&lt;quantidade&gt;: &apos;%s&apos;</translation>
+        <translation>Quantidade inválida para -paytxfee=&lt;quantidade&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="-15"/>
-        <source>Error: could not start node</source>
-        <translation>Erro: não pode iniciar o nodo</translation>
-    </message>
-    <message>
-        <location line="+40"/>
-        <source>Sending...</source>
-        <translation>Enviando...</translation>
-    </message>
-    <message>
-        <location line="-24"/>
+        <location line="+1"/>
         <source>Invalid amount</source>
         <translation>Quantidade inválida</translation>
     </message>
     <message>
-        <location line="-4"/>
+        <location line="-6"/>
         <source>Insufficient funds</source>
         <translation>Saldo insuficiente</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+10"/>
         <source>Loading block index...</source>
-        <translation>Abrindo a indexação de blocos...</translation>
+        <translation>Carregando índice de blocos...</translation>
     </message>
     <message>
-        <location line="-46"/>
+        <location line="-57"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Adicionar um nodo e tentar manter a conexão aberta</translation>
+        <translation>Adicionar um nó com o qual se conectar e tentar manter a conexão ativa</translation>
     </message>
     <message>
         <location line="-25"/>
         <source>Unable to bind to %s on this computer. Guarany is probably already running.</source>
-        <translation>Não foi possivel vincular %s a este computador. A Guarany provavelmente está rodando.</translation>
+        <translation>Impossível vincular a %s neste computador. O Guarany provavelmente já está rodando.</translation>
     </message>
     <message>
-        <location line="+55"/>
-        <source>Find peers using internet relay chat (default: 1)</source>
-        <translation>Procurar parceiros usando IRC (padrão: 1)</translation>
-    </message>
-    <message>
-        <location line="-2"/>
+        <location line="+64"/>
         <source>Fee per KB to add to transactions you send</source>
-        <translation>Taxa por KB a adiconar quando você enviar uma transação</translation>
+        <translation>Taxa por KB a ser acrescida nas transações que você enviar</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Loading wallet...</source>
-        <translation>Abrindo carteira...</translation>
+        <translation>Carregando carteira...</translation>
     </message>
     <message>
-        <location line="-39"/>
+        <location line="-52"/>
         <source>Cannot downgrade wallet</source>
-        <translation>Não pode fazer downgrade da carteira</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Cannot initialize keypool</source>
-        <translation>Não pode inicializar a keypool</translation>
+        <translation>Não é possível fazer downgrade da carteira</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Cannot write default address</source>
-        <translation>Não pode escrever no endereço padrão</translation>
-    </message>
-    <message>
-        <location line="+46"/>
-        <source>Rescanning...</source>
-        <translation>Reescaneando...</translation>
-    </message>
-    <message>
-        <location line="-40"/>
-        <source>Done loading</source>
-        <translation>Terminou de abrir</translation>
+        <translation>Não foi possível escrever no endereço padrão</translation>
     </message>
     <message>
         <location line="+64"/>
+        <source>Rescanning...</source>
+        <translation>Re-escaneando...</translation>
+    </message>
+    <message>
+        <location line="-57"/>
+        <source>Done loading</source>
+        <translation>Carregamento terminado</translation>
+    </message>
+    <message>
+        <location line="+82"/>
         <source>To use the %s option</source>
         <translation>Para usar a opção %s</translation>
     </message>
     <message>
-        <location line="-150"/>
-        <source>%s, you must set a rpcpassword in the configuration file:
- %s
-It is recommended you use the following random password:
-rpcuser=bitcoinrpc
-rpcpassword=%s
-(you do not need to remember this password)
-If the file does not exist, create it with owner-readable-only file permissions.
-</source>
-        <translation>%s, você deve definir um rpcpassword no arquivo de configuração:
- %s
-É recomendado que você use a senha aleatória seguinte:
-rpcuser=guaranyrpc
-rpcpassword=%s
-(você não precisa se lembrar desta senha)
-Se o arquivo não existir, crie com permissões de arquivo único do proprietário e leitura.
-</translation>
-    </message>
-    <message>
-        <location line="+91"/>
+        <location line="-74"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location line="-30"/>
-        <source>Você precisar configurar rpcpassword=&lt;senha&gt; no arquivo de configuração:
+        <location line="-31"/>
+        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
-Se o arquivo não existir, por favor crie com permissões de proprietário e leitura.</source>
-        <translation>Você precisa configurar uma rpcpassword=&lt;senha&gt; no arquivo de configuração:
-%s
-Se o arquivo não existe, crie com permissões de proprietário e leitura.</translation>
+If the file does not exist, create it with owner-readable-only file permissions.</source>
+        <translation>Você precisa especificar rpcpassword=&lt;senha&gt; no arquivo de configurações:⏎
+%s⏎
+Se o arquivo não existir, crie um com permissão de leitura apenas pelo dono</translation>
     </message>
 </context>
 </TS>
