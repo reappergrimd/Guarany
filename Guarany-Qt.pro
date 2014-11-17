@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = guarany-qt
+TARGET = Guarany-Qt
 macx:TARGET = "Guarany-Qt"
 VERSION = 1.4.0.0
 INCLUDEPATH += src src/json src/qt

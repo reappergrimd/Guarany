@@ -334,8 +334,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="-349"/>
-        <source>&amp;Overview</source>
-        <translation>Visã&amp;o geral</translation>
+        <source></source>
+        <translation></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1408,7 +1408,7 @@ Endereço: %4
     <message>
         <location line="+34"/>
         <source>The address to send the payment to (starts with G)</source>
-        <translation>O endereço para onde enviar o pagamento  (starts with G)</translation>
+        <translation>O endereço para onde enviar o pagamento  (inicia com G)</translation>
     </message>
     <message>
         <location line="+60"/>

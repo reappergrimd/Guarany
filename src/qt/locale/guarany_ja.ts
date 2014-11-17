@@ -329,8 +329,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-349"/>
-        <source>&amp;Overview</source>
-        <translation>概要(&amp;O)</translation>
+        <source></source>
+        <translation></translation>
     </message>
     <message>
         <location line="+1"/>

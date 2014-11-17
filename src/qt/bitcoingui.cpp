@@ -47,6 +47,7 @@
 #include <QMimeData>
 #include <QStyle>
 #include <QSettings>
+#include <QStyleFactory>
 #include <QDesktopWidget>
 #include <QListWidget>
 
@@ -71,8 +72,28 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
     nAverageWeight(0),
     nTotalWeight(0)
 {
-    restoreWindowGeometry();
+    setStyleSheet("font-weight:300; font-size:12px; font-family:'Roboto'");
+    QString ss("QMenuBar::item { background-color: transparent; color: #000000 }");
+    menuBar()->setStyleSheet(ss);
+	restoreWindowGeometry();
     setWindowTitle(tr("Guarany") + " - " + tr("Wallet"));
+	qApp->setStyle(QStyleFactory::create("Fusion"));
+QPalette palette;
+palette.setColor(QPalette::Window, QColor(247,247,247));
+palette.setColor(QPalette::WindowText, Qt::black);
+palette.setColor(QPalette::Base, QColor(247,247,247));
+palette.setColor(QPalette::AlternateBase, QColor(241,212,169));
+palette.setColor(QPalette::ToolTipBase, Qt::white);
+palette.setColor(QPalette::ToolTipText, Qt::white);
+palette.setColor(QPalette::Text, Qt::black);
+palette.setColor(QPalette::Button, QColor(13,80,111));
+palette.setColor(QPalette::ButtonText, Qt::white);
+palette.setColor(QPalette::BrightText, Qt::red);
+ 
+palette.setColor(QPalette::Highlight, QColor(65,139,202).lighter());
+palette.setColor(QPalette::HighlightedText, Qt::black);
+qApp->setPalette(palette); 
+
 #ifndef Q_OS_MAC
     QApplication::setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));
@@ -96,12 +117,14 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
 
     // Create the toolbars
     createToolBars();
+	
 
     // Create system tray icon and notification
     createTrayIcon();
 
     // Create status bar
     statusBar();
+	statusBar()->setStyleSheet("border: none; background-color: #0d506f; color: #FFFFFF;");
 
     // Status bar notification icons
     QFrame *frameBlocks = new QFrame();
@@ -109,6 +132,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
 //  frameBlocks->setMinimumWidth(56);
 //  frameBlocks->setMaximumWidth(56);
     frameBlocks->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
+	frameBlocks->setStyleSheet("color: #FFFFFF;");
     QHBoxLayout *frameBlocksLayout = new QHBoxLayout(frameBlocks);
     frameBlocksLayout->setContentsMargins(3,0,3,0);
     frameBlocksLayout->setSpacing(3);
@@ -183,35 +207,35 @@ void BitcoinGUI::createActions()
 {
     QActionGroup *tabGroup = new QActionGroup(this);
 
-    overviewAction = new QAction(QIcon(":/icons/overview"), tr("&Overview"), this);
+    overviewAction = new QAction(QIcon(":/icons/overview"), tr("&"), this);
     overviewAction->setStatusTip(tr("Show general overview of wallet"));
     overviewAction->setToolTip(overviewAction->statusTip());
     overviewAction->setCheckable(true);
     overviewAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_1));
     tabGroup->addAction(overviewAction);
 
-    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send"), this);
+    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&"), this);
     sendCoinsAction->setStatusTip(tr("Send coins to a Guarany address"));
     sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
     tabGroup->addAction(sendCoinsAction);
 
-    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive"), this);
+    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&"), this);
     receiveCoinsAction->setStatusTip(tr("Show the list of addresses for receiving payments"));
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
     receiveCoinsAction->setCheckable(true);
     receiveCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_3));
     tabGroup->addAction(receiveCoinsAction);
 
-    historyAction = new QAction(QIcon(":/icons/history"), tr("&Transactions"), this);
+    historyAction = new QAction(QIcon(":/icons/history"), tr("&"), this);
     historyAction->setStatusTip(tr("Browse transaction history"));
     historyAction->setToolTip(historyAction->statusTip());
     historyAction->setCheckable(true);
     historyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_4));
     tabGroup->addAction(historyAction);
 
-    addressBookAction = new QAction(QIcon(":/icons/address-book"), tr("&Addresses"), this);
+    addressBookAction = new QAction(QIcon(":/icons/address-book"), tr("&"), this);
     addressBookAction->setStatusTip(tr("Edit the list of stored addresses and labels"));
     addressBookAction->setToolTip(addressBookAction->statusTip());
     addressBookAction->setCheckable(true);
@@ -313,13 +337,25 @@ void BitcoinGUI::createMenuBar()
 
 void BitcoinGUI::createToolBars()
 {
-    QToolBar *toolbar = addToolBar(tr("Tabs toolbar"));
-    toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+    QLabel *mylabel = new QLabel (this);
+    mylabel->setPixmap(QPixmap(":images/head"));
+    mylabel->show();
+	
+	QToolBar* toolbar = new QToolBar(this);
+	toolbar->setObjectName("toolbar");
+	addToolBar(Qt::LeftToolBarArea, toolbar);
+    toolbar->setIconSize(QSize(60,36));
+	toolbar->setOrientation(Qt::Vertical);
+	toolbar->setMovable( false );
+    toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+	toolbar->addWidget(mylabel);
     toolbar->addAction(overviewAction);
     toolbar->addAction(sendCoinsAction);
     toolbar->addAction(receiveCoinsAction);
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
+	
+	toolbar->setStyleSheet("#toolbar { font-weight:300;border:none;height:100%;padding-top:20px; background: #0d506f; text-align: left; color: black;} QToolBar QToolButton:hover {background:rgb(65,139,202);} QToolBar QToolButton:checked {background:rgba(65,139,202);}  QToolBar QToolButton { font-weight:300;font-size:12px;font-family:'Roboto';padding-left:1px;padding-right:60px;padding-top:5px;padding-bottom:5px; height: 32px; width: 32px; color: black; text-align: left; background:transparent;text-transform:uppercase; }");
 }
 
 void BitcoinGUI::setClientModel(ClientModel *clientModel)

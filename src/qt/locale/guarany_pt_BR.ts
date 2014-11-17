@@ -334,8 +334,8 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     </message>
     <message>
         <location line="-349"/>
-        <source>&amp;Overview</source>
-        <translation>&amp;Visão geral</translation>
+        <source></source>
+        <translation></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1407,7 +1407,7 @@ Endereço: %4</translation>
     <message>
         <location line="+34"/>
         <source>The address to send the payment to (starts with G)</source>
-        <translation>O endereço para onde enviar o pagamento (starts with G)</translation>
+        <translation>O endereco para onde enviar o pagamento (inicia com G)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1448,7 +1448,7 @@ Endereço: %4</translation>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a Guarany address (starts with G)</source>
-        <translation>Digite um endereço Guarany (starts with G)</translation>
+        <translation>Digite um endereço Guarany (inicia com G)</translation>
     </message>
 </context>
 <context>

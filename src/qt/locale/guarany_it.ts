@@ -334,8 +334,8 @@ Questo prodotto include software sviluppato dal progetto OpenSSL per l&apos;uso 
     </message>
     <message>
         <location line="-349"/>
-        <source>&amp;Overview</source>
-        <translation>&amp;Sintesi</translation>
+        <source></source>
+        <translation></translation>
     </message>
     <message>
         <location line="+1"/>

@@ -337,8 +337,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-349"/>
-        <source>&amp;Overview</source>
-        <translation>&amp;Vista general</translation>
+        <source></source>
+        <translation></translation>
     </message>
     <message>
         <location line="+1"/>
