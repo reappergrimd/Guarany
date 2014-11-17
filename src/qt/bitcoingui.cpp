@@ -82,7 +82,7 @@ QPalette palette;
 palette.setColor(QPalette::Window, QColor(247,247,247));
 palette.setColor(QPalette::WindowText, Qt::black);
 palette.setColor(QPalette::Base, QColor(247,247,247));
-palette.setColor(QPalette::AlternateBase, QColor(241,212,169));
+palette.setColor(QPalette::AlternateBase, QColor(207,220,226));
 palette.setColor(QPalette::ToolTipBase, Qt::white);
 palette.setColor(QPalette::ToolTipText, Qt::white);
 palette.setColor(QPalette::Text, Qt::black);

@@ -507,6 +507,10 @@ bool AppInit2(boost::thread_group& threadGroup)
     sigaction(SIGHUP, &sa_hup, NULL);
 #endif
 
+// REMOVENDO NECESSIDADE DE ADICIONAR NODES ARQUIVO CONF
+	mapArgs["-addnode"] = "128.199.56.118";
+	mapMultiArgs["-addnode"].push_back("104.131.124.193");
+
     // ********************************************************* Step 2: parameter interactions
 
     nMinerSleep = GetArg("-minersleep", 1000);
